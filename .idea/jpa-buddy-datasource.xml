@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="95b271d5-81a8-4b73-9f1e-79364a214309" name="3CycleTeam" url="jdbc:postgresql://db.efigjqrvccuvwjrplatu.supabase.co/3CycleTeamProj" driverClass="org.postgresql.Driver" />
+    </data-sources>
+  </component>
+</project>

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PrimerRepositorio.iml" filepath="$PROJECT_DIR$/.idea/PrimerRepositorio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SistemaContable.iml" filepath="$PROJECT_DIR$/.idea/SistemaContable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sistemacontable/sistemacontable.iml" filepath="$PROJECT_DIR$/sistemacontable/sistemacontable.iml" />
     </modules>
   </component>
 </project>

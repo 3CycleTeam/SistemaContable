@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b2c4ed-1dcf-4ca8-b05d-5aab340eb311" name="Changes" comment="" />
+    <list default="true" id="11b2c4ed-1dcf-4ca8-b05d-5aab340eb311" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SistemacontableApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SistemacontableApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/test/java/com/CycleTeam/sistemacontable/SistemacontableApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/test/java/com/CycleTeam/sistemacontable/SistemacontableApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +54,8 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "vcs.Git"
   },
   "keyToStringList": {
     "GitStage.ChangesTree.GroupingKeys": [
@@ -54,7 +65,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SistemacontableApplication">
     <configuration name="SistemacontableApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.CycleTeam.sistemacontable.SistemacontableApplication" />
       <module name="sistemacontable" />
@@ -68,9 +79,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.CycleTeam.sistemacontable in sistemacontable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sistemacontable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.CycleTeam.sistemacontable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.CycleTeam.sistemacontable" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.SistemacontableApplication" />
+        <item itemvalue="JUnit.com.CycleTeam.sistemacontable in sistemacontable" />
       </list>
     </recent_temporary>
   </component>
@@ -98,5 +124,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

@@ -47,4 +47,6 @@ public class Empleado {
     public void setRolEmpleado(String rolEmpleado) {
         this.rolEmpleado = rolEmpleado;
     }
+
 }
+

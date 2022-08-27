@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99a5828f-5bf6-431e-abe6-cf3700407d2d" name="Changes" comment="Se actualiza estructura,">
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/MovimientoDinero.java" afterDir="false" />
+    <list default="true" id="846fff5a-967d-4e2e-ab9b-b1783c66d415" name="Changes" comment="Se actualiza estructura,">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,24 +54,23 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/01MisionTic2022/Ciclo3/SistemaGestionDeProyectos/ProyectoGit/SistemaContable",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/01MisionTic2022/Ciclo3/SistemaGestionDeProyectos/ProyectoGit/SistemaContable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  &amp;quot;keyToStringList&amp;quot;: {
+    &amp;quot;GitStage.ChangesTree.GroupingKeys&amp;quot;: [
+      &amp;quot;directory&amp;quot;,
+      &amp;quot;module&amp;quot;,
+      &amp;quot;repository&amp;quot;
     ]
   }
 
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.PruebaClases">
     <configuration name="PruebaClases" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.CycleTeam.sistemacontable.entities.PruebaClases" />
@@ -124,7 +123,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="99a5828f-5bf6-431e-abe6-cf3700407d2d" name="Changes" comment="Se actualiza estructura," />
+      <changelist id="846fff5a-967d-4e2e-ab9b-b1783c66d415" name="Changes" comment="" />
       <created>1661305964916</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

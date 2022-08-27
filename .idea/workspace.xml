@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b2c4ed-1dcf-4ca8-b05d-5aab340eb311" name="Changes" comment="">
+    <list default="true" id="99a5828f-5bf6-431e-abe6-cf3700407d2d" name="Changes" comment="Se actualiza estructura,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SistemacontableApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SistemacontableApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empleado.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

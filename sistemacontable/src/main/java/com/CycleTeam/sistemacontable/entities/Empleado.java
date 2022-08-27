@@ -1,20 +1,23 @@
 package com.CycleTeam.sistemacontable.entities;
 
 public class Empleado {
+    //Atributos de la clase Empleado
     private String nombre;
     private String correo;
     private String empresaPertenece;
     private String rolEmpleado;
 
-    public String getNombre() {
-        return nombre;
-    }
-
+    //Constructor de la clase Empleado
     public Empleado(String nombre, String correo, String empresaPertenece, String rolEmpleado) {
         this.nombre = nombre;
         this.correo = correo;
         this.empresaPertenece = empresaPertenece;
         this.rolEmpleado = rolEmpleado;
+    }
+
+    //Setters y Getters de la clase Empleado
+    public String getNombre() {
+        return nombre;
     }
 
     public void setNombre(String nombre) {

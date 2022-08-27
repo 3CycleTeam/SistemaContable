@@ -1,18 +1,22 @@
 package com.CycleTeam.sistemacontable.entities;
 
+
+//Atributos de la clase
 public class Empresa {
     private String nombre;
     private String direccion;
     private String telefono;
     private String nit;
 
+//Constructor de la clase empleado
     public Empresa(String nombre, String direccion, String telefono, String nit) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
         this.nit = nit;
     }
-
+    
+//Getter and setter
     public String getNombre() {
         return nombre;
     }

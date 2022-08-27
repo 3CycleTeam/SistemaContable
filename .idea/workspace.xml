@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="99a5828f-5bf6-431e-abe6-cf3700407d2d" name="Changes" comment="Se actualiza estructura,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SistemacontableApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SistemacontableApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/PruebaClases.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,21 +43,21 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.PruebaClases">
     <configuration name="PruebaClases" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.CycleTeam.sistemacontable.entities.PruebaClases" />
@@ -149,5 +148,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Se actualiza estructura," />
     <option name="LAST_COMMIT_MESSAGE" value="Se actualiza estructura," />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

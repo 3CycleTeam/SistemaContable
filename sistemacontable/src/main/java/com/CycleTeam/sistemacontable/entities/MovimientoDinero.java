@@ -1,10 +1,14 @@
 package com.CycleTeam.sistemacontable.entities;
 
 public class MovimientoDinero {
+	//atributos
     private String montoDinero;
     private String conceptoMovimiento;
     private String empleadoMovimiento;
     private String rolEmpleado;
+
+    // getters & setters
+
 
     public String getMontoDinero() {
         return montoDinero;
@@ -17,11 +21,7 @@ public class MovimientoDinero {
     public String getConceptoMovimiento() {
         return conceptoMovimiento;
     }
-
-    public void setConceptoMovimiento(String conceptoMovimiento) {
-        this.conceptoMovimiento = conceptoMovimiento;
-    }
-
+    
     public String getRolEmpleado() {
         return rolEmpleado;
     }
@@ -33,7 +33,10 @@ public class MovimientoDinero {
     public void setRolEmpleado(String rolEmpleado) {
         this.rolEmpleado = rolEmpleado;
     }
-
+    public void setConceptoMovimiento(String conceptoMovimiento) {
+        this.conceptoMovimiento = conceptoMovimiento;
+    }
+// Constructor
     public MovimientoDinero(String montoDinero, String conceptoMovimiento, String empleadoMovimiento, String rolEmpleado) {
         this.montoDinero = montoDinero;
         this.conceptoMovimiento = conceptoMovimiento;

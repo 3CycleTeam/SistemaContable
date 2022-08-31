@@ -1,14 +1,24 @@
 package com.CycleTeam.sistemacontable.entities;
 
+import javax.persistence.*;
 
 //Atributos de la clase
+@Entity
+@Table(name="Empresa")
 public class Empresa {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
     private String nombre;
     private String direccion;
     private String telefono;
     private String nit;
 
 //Constructor de la clase empleado
+
+    public Empresa() {
+    }
+
     public Empresa(String nombre, String direccion, String telefono, String nit) {
         this.nombre = nombre;
         this.direccion = direccion;
@@ -48,4 +58,5 @@ public class Empresa {
     public void setNit(String nit) {
         this.nit = nit;
     }
+
 }

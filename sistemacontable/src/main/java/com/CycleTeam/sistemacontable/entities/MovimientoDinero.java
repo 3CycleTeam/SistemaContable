@@ -44,3 +44,5 @@ public class MovimientoDinero {
         this.rolEmpleado = rolEmpleado;
     }
 }
+
+//Probando IntelliJ

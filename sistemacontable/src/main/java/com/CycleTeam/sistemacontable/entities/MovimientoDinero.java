@@ -1,5 +1,6 @@
 package com.CycleTeam.sistemacontable.entities;
 
+
 public class MovimientoDinero {
 	//atributos
     private String montoDinero;

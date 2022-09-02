@@ -1,5 +1,7 @@
 package com.CycleTeam.sistemacontable.entities;
 
+import javax.persistence.Entity;
+
 public class MovimientoDinero {
 	//atributos
     private String montoDinero;
@@ -43,6 +45,5 @@ public class MovimientoDinero {
         this.empleadoMovimiento = empleadoMovimiento;
         this.rolEmpleado = rolEmpleado;
     }
-}
 
-//Probando IntelliJ
+}

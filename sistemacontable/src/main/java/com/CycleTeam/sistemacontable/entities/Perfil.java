@@ -17,25 +17,14 @@ public class Perfil {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    @OneToOne
-    @JoinColumn(name = "usuario_id")
-    private Empleado usuario;
+
+    private String  nombreRol;
     private Date fechaCreado;
     private Date fechaActualizado;
 
-    public Perfil(Empleado usuario, Date fechaCreado, Date fechaActualizado) {
-        this.usuario = usuario;
+    public Perfil(String nombreRol, Date fechaCreado, Date fechaActualizado) {
+        this.nombreRol = nombreRol;
         this.fechaCreado = fechaCreado;
         this.fechaActualizado = fechaActualizado;
     }
-
-    public Empleado getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Empleado usuario) {
-        this.usuario = usuario;
-    }
-
-
 }

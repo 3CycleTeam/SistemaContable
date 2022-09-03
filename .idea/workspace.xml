@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="846fff5a-967d-4e2e-ab9b-b1783c66d415" name="Changes" comment="Se actualiza estructura,">
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy-datasource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy-datasource.xml" afterDir="false" />
+    <list default="true" id="b8c3fa59-ab64-4a83-b91e-2236e53b4b4d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Perfil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_27_2022_5_05_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_27_2022_5_05_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SistemacontableApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SistemacontableApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/EmpleadoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empleado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/MovimientoDinero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,14 +25,13 @@
       <list>
         <option value="HTML File" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="release" />
+        <entry key="$PROJECT_DIR$" value="development" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,6 +62,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="17" />
+  </component>
   <component name="ProjectId" id="2DmYw5Wfq9ysgb1OkFAT064PQXD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -69,20 +77,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/01MisionTic2022/Ciclo3/SistemaGestionDeProyectos/ProyectoGit/SistemaContable&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
-  },
-  &amp;quot;keyToStringList&amp;quot;: {
-    &amp;quot;GitStage.ChangesTree.GroupingKeys&amp;quot;: [
-      &amp;quot;directory&amp;quot;,
-      &amp;quot;module&amp;quot;,
-      &amp;quot;repository&amp;quot;
-    ]
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;
   }
-
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -130,20 +131,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.PruebaClases" />
+      <item itemvalue="Application.SistemacontableApplication" />
+      <item itemvalue="JUnit.com.CycleTeam.sistemacontable in sistemacontable" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.SistemacontableApplication" />
         <item itemvalue="JUnit.com.CycleTeam.sistemacontable in sistemacontable" />
         <item itemvalue="Application.PruebaClases" />
-        <item itemvalue="JUnit.com.CycleTeam.sistemacontable in sistemacontable" />
         <item itemvalue="Application.SistemacontableApplication" />
+        <item itemvalue="Application.PruebaClases" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="846fff5a-967d-4e2e-ab9b-b1783c66d415" name="Changes" comment="" />
+      <changelist id="b8c3fa59-ab64-4a83-b91e-2236e53b4b4d" name="Changes" comment="" />
       <created>1661305964916</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -163,14 +169,7 @@
       <option name="project" value="LOCAL" />
       <updated>1661557860925</updated>
     </task>
-    <task id="LOCAL-00003" summary="Se actualiza el POM de la Rama de Julian con los repositorios JPA,Postgresy Oauth2. Tambien se actualiza el archivo properties con la conexion a la DB">
-      <created>1662003735173</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1662003735173</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,8 +186,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Se actualiza estructura," />
-    <MESSAGE value="Se actualiza el POM de la Rama de Julian con los repositorios JPA,Postgresy Oauth2. Tambien se actualiza el archivo properties con la conexion a la DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se actualiza estructura," />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

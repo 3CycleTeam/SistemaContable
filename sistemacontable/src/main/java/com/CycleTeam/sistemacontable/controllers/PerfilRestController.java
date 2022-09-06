@@ -14,17 +14,17 @@ public class PerfilRestController {
     @Autowired
     PerfilService perfilService;
 
-    @GetMapping("/listarperfiles")
+    @GetMapping("/listarperfiles")///Get es para leer registros
     public List<Perfil> listarPerfiles() {
         return this.perfilService.getPerfiles();
     }
 
-    @PostMapping("/crearperfil")
+    @PostMapping("/crearperfil")// Enviar Registros
     public Perfil crearPerfil(@RequestBody Perfil nuevoPerfil) {
        return this.perfilService.crearPerfil(nuevoPerfil);
     }
 
-    @PatchMapping("/perfiles/{id}")
+    @PatchMapping("/perfiles/{id}")//Actualizar Registros
     public Perfil actulizarperfil(@RequestBody Perfil nuevoPerfil, @PathVariable Integer id){
         Perfil perfilActual= this.perfilService.buscarPerfilbyId(id);
         perfilActual.setNombreRol(nuevoPerfil.getNombreRol());
@@ -33,11 +33,14 @@ public class PerfilRestController {
 
     }
 
-    @DeleteMapping("/perfiles/{id}")
-    public void  actulizarperfil(@PathVariable Integer id){
-        this.perfilService.eliminarPerfilId(id);
-
-
+    @DeleteMapping("/perfiles/{id}")///Borrar Registros
+    public String  actulizarperfil(@PathVariable Integer id){
+        try {
+            this.perfilService.eliminarPerfilId(id);
+            return "Borrado  ok";
+        } catch (Exception e) {
+            return "No se pudo borrar el Registro "+id+" El Error es: "+e.getMessage();
+        }
     }
 
 

@@ -1,6 +1,6 @@
-package com.UdeA.Ciclo3.Repositorios;
+package com.CycleTeam.SistemaContable.Repositorios;
 
-import com.UdeA.Ciclo3.modelos.Empresa;
+import com.CycleTeam.sistemacontable.entities.Empresa;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

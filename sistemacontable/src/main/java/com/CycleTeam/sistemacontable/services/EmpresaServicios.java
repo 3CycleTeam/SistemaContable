@@ -1,7 +1,7 @@
-package com.UdeA.Ciclo3.Servicios;
+package com.CycleTeam.sistemacontable.Servicios;
 
-import com.UdeA.Ciclo3.Repositorios.EmpresaReposotory;
-import com.UdeA.Ciclo3.modelos.Empresa;
+import com.CycleTeam.sistemacontable.Repositories.EmpresaReposotory;
+import com.CycleTeam.sistemacontable.Entities.Empresa;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

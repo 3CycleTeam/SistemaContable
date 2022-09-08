@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8c3fa59-ab64-4a83-b91e-2236e53b4b4d" name="Changes" comment="">
-
-      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Perfil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_27_2022_5_05_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_27_2022_5_05_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SistemacontableApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SistemacontableApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/EmpleadoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empleado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/MovimientoDinero.java" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/test/java/com/CycleTeam/sistemacontable/SistemacontableApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +26,6 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="development" />
-
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

@@ -27,10 +27,18 @@ public class EmpresaServicios {
     }
     public boolean guardarOActualizaEmpresa(Empresa empresa){
         Empresa emp = empresaRepository.save(empresa);
-        if(EmpresaRepository.findById(emp.getId())!= null){
+        if(empresaRepository.findById(emp.getId())!= null){
             return true;
         }
         return false;
     }
 
+    public boolean deleteEmpresa (Integer id){
+        empresaRepository.deleteById(id);
+        if (empresaRepository.findById(id)!=null){
+            return true;
+        }
+        return false;
+
+    }
 }

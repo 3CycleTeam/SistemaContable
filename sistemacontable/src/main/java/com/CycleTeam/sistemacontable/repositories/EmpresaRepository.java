@@ -1,4 +1,4 @@
-package com.CycleTeam.SistemaContable.Repositorios;
+package com.CycleTeam.SistemaContable.Repositories;
 
 import com.CycleTeam.sistemacontable.entities.Empresa;
 import org.springframework.data.jpa.repository.JpaRepository;

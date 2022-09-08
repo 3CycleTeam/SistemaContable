@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8c3fa59-ab64-4a83-b91e-2236e53b4b4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/MoviDinerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/repositories/MoviDinerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/services/MoviDinerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_27_2022_5_05_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_27_2022_5_05_PM__Changes_.xml" beforeDir="false" />
+
+      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Perfil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_27_2022_5_05_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_27_2022_5_05_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/test/java/com/CycleTeam/sistemacontable/SistemacontableApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/test/java/com/CycleTeam/sistemacontable/SistemacontableApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SistemacontableApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SistemacontableApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/EmpleadoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empleado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/MovimientoDinero.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +33,8 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="DevelopmentJuanguma" />
+        <entry key="$PROJECT_DIR$" value="development" />
+
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,9 +68,6 @@
   <component name="MavenRunner">
     <option name="jreName" value="17" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectId" id="2DmYw5Wfq9ysgb1OkFAT064PQXD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -81,8 +82,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;
   }
@@ -93,12 +94,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.SistemacontableApplication">
-    <configuration name="PruebaClases" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="PruebaClases" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.CycleTeam.sistemacontable.entities.PruebaClases" />
       <module name="sistemacontable" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.CycleTeam.sistemacontable.entities.Empresa" />
+          <option name="PATTERN" value="com.CycleTeam.sistemacontable.entities.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,8 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SistemacontableApplication" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../Program Files/Java/jdk-17" />
+    <configuration name="SistemacontableApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.CycleTeam.sistemacontable.SistemacontableApplication" />
       <module name="sistemacontable" />
       <extension name="coverage">
@@ -120,27 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in SistemaContable (1)" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="SistemaContable" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in SistemaContable" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="SistemaContable" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="17" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.CycleTeam.sistemacontable in sistemacontable" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+    <configuration name="com.CycleTeam.sistemacontable in sistemacontable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sistemacontable" />
       <extension name="coverage">
         <pattern>
@@ -157,10 +137,17 @@
     <list>
       <item itemvalue="Application.PruebaClases" />
       <item itemvalue="Application.SistemacontableApplication" />
-      <item itemvalue="JUnit.All in SistemaContable" />
-      <item itemvalue="JUnit.All in SistemaContable (1)" />
       <item itemvalue="JUnit.com.CycleTeam.sistemacontable in sistemacontable" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SistemacontableApplication" />
+        <item itemvalue="JUnit.com.CycleTeam.sistemacontable in sistemacontable" />
+        <item itemvalue="Application.PruebaClases" />
+        <item itemvalue="Application.SistemacontableApplication" />
+        <item itemvalue="Application.PruebaClases" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -185,14 +172,7 @@
       <option name="project" value="LOCAL" />
       <updated>1661557860925</updated>
     </task>
-    <task id="LOCAL-00003" summary="Se actualiza estructura,">
-      <created>1662167064369</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1662167064369</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">

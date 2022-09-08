@@ -1,39 +1,36 @@
 package com.CycleTeam.sistemacontable.controllers;
 
-import com.CycleTeam.sistemacontable.entities.Empleado;
-import com.CycleTeam.sistemacontable.repositories.EmpleadoRepository;
-import com.CycleTeam.sistemacontable.services.EmpleadoService;
+import com.CycleTeam.sistemacontable.entities.Empresa;
+import com.CycleTeam.sistemacontable.services.EmpresaServicios;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
 import java.util.List;
 
- //EMPLEADO
- 
+
  // VER EMPLEADO
-    @GetMapping ("/VerEmpleados")
-    public String viewEmpleados(Model model, @ModelAttribute("mensaje") String mensaje){
-        List<Empleado> listaEmpleados=empleadoService.getAllEmpleado();
-        model.addAttribute("emplelist",listaEmpleados);
-        model.addAttribute("mensaje",mensaje);
+@GetMapping ("/VerEmpleados")
+public String viewEmpleados(Model model, @ModelAttribute("mensaje") String mensaje){
+    List<Empleado> listaEmpleados=empleadoService.getAllEmpleado();
+    model.addAttribute("emplelist",listaEmpleados);
+    model.addAttribute("mensaje",mensaje);
     }
 
 // AGREGAR EMPLEADO
-    @GetMapping("/AgregarEmpleado")
-    public String nuevoEmpleado(Model model, @ModelAttribute("mensaje") String mensaje){
-        Empleado empl= new Empleado();
-        model.addAttribute("empl",empl);
-        model.addAttribute("mensaje",mensaje);
-        List<Empresa> listaEmpresas= empresaService.getAllEmpresas();
-        model.addAttribute("emprelist",listaEmpresas);
+@GetMapping("/AgregarEmpleado")
+public String nuevoEmpleado(Model model, @ModelAttribute("mensaje") String mensaje){
+    Empleado empl= new Empleado();
+    model.addAttribute("empl",empl);
+    model.addAttribute("mensaje",mensaje);
+    List<Empresa> listaEmpresas= empresaService.getAllEmpresas();
+    model.addAttribute("emprelist",listaEmpresas);
     }
 
 // CREAR Y/O GUARDAR EMPLEADO
-    @PostMapping("/GuardarEmpleado")
-    public String guardarEmpleado(Empleado empl, RedirectAttributes redirectAttributes){
-        if(empleadoService.saveOrUpdateEmpleado(empl)==true){
-            redirectAttributes.addFlashAttribute("mensaje","saveOK");
+@PostMapping("/GuardarEmpleado")
+public String guardarEmpleado(Empleado empl, RedirectAttributes redirectAttributes){
+    if(empleadoService.saveOrUpdateEmpleado(empl)==true){
+        redirectAttributes.addFlashAttribute("mensaje","saveOK");
             return "redirect:/VerEmpleados";
         }
         redirectAttributes.addFlashAttribute("mensaje","saveError");
@@ -76,6 +73,8 @@ import java.util.List;
         return "redirect:/VerEmpleados";
     }
 
+
+ 
 
  
 

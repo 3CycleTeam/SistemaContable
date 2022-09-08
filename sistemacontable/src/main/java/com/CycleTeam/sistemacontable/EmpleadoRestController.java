@@ -10,14 +10,16 @@ import java.util.Date;
 import java.util.List;
 
  //EMPLEADO
+ 
+ // VER EMPLEADO
     @GetMapping ("/VerEmpleados")
     public String viewEmpleados(Model model, @ModelAttribute("mensaje") String mensaje){
         List<Empleado> listaEmpleados=empleadoService.getAllEmpleado();
         model.addAttribute("emplelist",listaEmpleados);
         model.addAttribute("mensaje",mensaje);
-        return "verEmpleados"; //Llamamos al HTML
     }
 
+// AGREGAR EMPLEADO
     @GetMapping("/AgregarEmpleado")
     public String nuevoEmpleado(Model model, @ModelAttribute("mensaje") String mensaje){
         Empleado empl= new Empleado();
@@ -25,9 +27,9 @@ import java.util.List;
         model.addAttribute("mensaje",mensaje);
         List<Empresa> listaEmpresas= empresaService.getAllEmpresas();
         model.addAttribute("emprelist",listaEmpresas);
-        return "agregarEmpleado"; //Llamar HTML
     }
 
+// CREAR Y/O GUARDAR EMPLEADO
     @PostMapping("/GuardarEmpleado")
     public String guardarEmpleado(Empleado empl, RedirectAttributes redirectAttributes){
         if(empleadoService.saveOrUpdateEmpleado(empl)==true){
@@ -38,6 +40,7 @@ import java.util.List;
         return "redirect:/AgregarEmpleado";
     }
 
+// EDITAR EMPLEADO
     @GetMapping("/EditarEmpleado/{id}")
     public String editarEmpleado(Model model, @PathVariable Integer id, @ModelAttribute("mensaje") String mensaje){
         Empleado empl=empleadoService.getEmpleadoById(id).get();
@@ -49,6 +52,7 @@ import java.util.List;
         return "editarEmpleado";
     }
 
+// ACTUALIZAR EMPLEADO
     @PostMapping("/ActualizarEmpleado")
     public String updateEmpleado(@ModelAttribute("empl") Empleado empl, RedirectAttributes redirectAttributes){
         if(empleadoService.saveOrUpdateEmpleado(empl)){
@@ -60,6 +64,8 @@ import java.util.List;
 
     }
 
+
+// DELETE EMPLEADO
     @GetMapping("/EliminarEmpleado/{id}")
     public String eliminarEmpleado(@PathVariable Integer id, RedirectAttributes redirectAttributes){
         if (empleadoService.deleteEmpleado(id)){

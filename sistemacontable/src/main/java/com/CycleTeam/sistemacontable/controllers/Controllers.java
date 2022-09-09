@@ -71,6 +71,37 @@ public class Controllers{
     public Optional<Empleado> guardarEmpleado(@RequestBody Empleado empleado){
         return Optional.ofNullable(this.empleadoService.guardarOActualizaEmpleado(empleado));
     }
+
+    //get
+    @GetMapping ("/Empleados/{id}")
+    public Optional<Empleado> empleadoPorId (@PathVariable("id") Integer id){
+        return  this.empleadoService.getEmpleadoById(id);
+    }
+
+    @PatchMapping ("/Empleados/{id}")
+    public Empleado actualizarEmpleado (@PathVariable ("id") Integer id, @RequestBody Empleado empleado){
+        Empleado worker = empleadoService.getEmpleadoById(id).get();
+        worker.setNombre(empleado.getNombre());
+        worker.setCorreo(empleado.getCorreo());
+        worker.setEmpresaPertenece(empleado.getEmpresaPertenece());
+        worker.setRolEmpleado(empleado.getRolEmpleado());
+        return empleadoService.guardarOActualizaEmpleado(worker);
+    }
+
+    //Delete empleado
+
+    @DeleteMapping ("/Empleados/{id}")
+    public String DeleteEmpleado(@PathVariable("id") Integer id){
+        boolean answers =this.empleadoService.deleteEmpleado(id);
+        if(answers){
+            return "Se elimio la empleado con Id"+id;
+        }
+        else {
+            return "No se pudo eliminar el empleado con el Id"+id;
+        }
+
+    }
 }
+
 
 

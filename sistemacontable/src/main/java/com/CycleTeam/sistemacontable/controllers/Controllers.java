@@ -153,6 +153,18 @@ public class Controllers{
     }
 
 
+    @DeleteMapping("/Empresas/{id}/Movimientos")
+    public String DeleteMovimiento (@PathVariable("id") Integer id){
+        boolean answers =this.moviDinerService.deleteMovimiento(id);
+        if(answers){
+            return "Se elimino movimiento de dinero del empleado con Id "+id;
+        }
+        else {
+            return "No se pudo eliminar el movimiento de dinero del empleado con Id "+id;
+        }
+    }
+
+
 }
 
 

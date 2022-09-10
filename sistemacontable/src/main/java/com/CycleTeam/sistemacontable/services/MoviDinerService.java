@@ -69,4 +69,12 @@ public class MoviDinerService {
     public MovimientoDinero guardarOActualizarMovimiento(MovimientoDinero movimientoDinero){
         return this.moviDinerRepository.save(movimientoDinero);
     }
+
+    public Boolean deleteMovimiento (Integer id){
+        moviDinerRepository.deleteById(id);
+        if (this.moviDinerRepository.findById(id).isPresent()){
+            return false;
+        }
+        return true;
+    }
 }

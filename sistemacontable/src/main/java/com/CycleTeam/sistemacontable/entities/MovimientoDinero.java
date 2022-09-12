@@ -13,12 +13,16 @@ import javax.persistence.*;
 public class MovimientoDinero {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
+    private Integer id;
     private Float movimientoDinero;
     private String conceptoMovimiento;
     @ManyToOne
     @JoinColumn(name = "empleado_movimiento_id")
     private Empleado empleadoMovimiento;
 
+    @ManyToOne
+    @JoinColumn(name = "empresa_movimiento_id")
+    private Empresa empresaMovimiento;
     public MovimientoDinero(Float movimientoDinero, String conceptoMovimiento, Empleado empleadoMovimiento) {
         this.movimientoDinero = movimientoDinero;
         this.conceptoMovimiento = conceptoMovimiento;

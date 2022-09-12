@@ -113,8 +113,8 @@ public class Controllers{
             return this.moviDinerService.getAllMovimientoDinero();
         }
 
-        @PostMapping ("/Movimiento")//Guardar todos los movimientos
-        public MovimientoDinero crearMovimientoDinero(@RequestBody MovimientoDinero nuevoMovimientoDinero){
+        @PostMapping ("/Empresas/{id}/Movimientos")//Guardar todos los movimientos
+        public MovimientoDinero guardarOActualizarMovimiento(@PathVariable Integer id ,@RequestBody MovimientoDinero nuevoMovimientoDinero){
             return this.moviDinerService.crearMovimientoDinero(nuevoMovimientoDinero);
         }
 
@@ -134,6 +134,37 @@ public class Controllers{
 
 
     /// }
+
+
+
+    @GetMapping("/Empresas/{id}/Movimientos")
+    public List<MovimientoDinero> buscarMovDinerByEmpresa(@PathVariable  Integer id){
+        //Empresa empresa = this.empresaServicios.getEmpresaById(id);
+        return  this.moviDinerService.buscarMoviDinerbyEmpresa(id);
+    }
+
+
+    @PatchMapping("/Empresas/{id}/Movimientos")
+    public MovimientoDinero actualizarMovimiento(@PathVariable  Integer id,@RequestBody MovimientoDinero nuevoMovimientoDinero){
+        MovimientoDinero movimientoActual  = this.moviDinerService.buscarMoviDinerbyId(id);
+        movimientoActual.setConceptoMovimiento(nuevoMovimientoDinero.getConceptoMovimiento());
+        movimientoActual.setMovimientoDinero(nuevoMovimientoDinero.getMovimientoDinero());
+        return this.moviDinerService.guardarOActualizarMovimiento(movimientoActual);
+    }
+
+
+    @DeleteMapping("/Empresas/{id}/Movimientos")
+    public String DeleteMovimiento (@PathVariable("id") Integer id){
+        boolean answers =this.moviDinerService.deleteMovimiento(id);
+        if(answers){
+            return "Se elimino movimiento de dinero del empleado con Id "+id;
+        }
+        else {
+            return "No se pudo eliminar el movimiento de dinero del empleado con Id "+id;
+        }
+    }
+
+
 }
 
 

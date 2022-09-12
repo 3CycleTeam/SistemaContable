@@ -1,6 +1,8 @@
 package com.CycleTeam.sistemacontable.services;
 
 
+import com.CycleTeam.sistemacontable.entities.Empleado;
+import com.CycleTeam.sistemacontable.entities.Empresa;
 import com.CycleTeam.sistemacontable.entities.MovimientoDinero;
 import com.CycleTeam.sistemacontable.repositories.MoviDinerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +26,7 @@ public class MoviDinerService {
     }
 
 
-    //listar todos los movimientos realizados
+    //listar todos los movimientos realizados|
 
     public List<MovimientoDinero> getAllMovimientoDinero(){
         List<MovimientoDinero> movimientoDineroList =new ArrayList<>();
@@ -54,5 +56,25 @@ public class MoviDinerService {
    // public ArrayList<MovimientoDinero> obtenerPorEmpresa(Integer id) { //Obtener movimientos teniendo en cuenta el id de la empresa a la que pertencen los empleados que la registraron
     //      return moviDinerRepository.findByEmpresa(id);
     //    }
+    public List<MovimientoDinero> buscarMoviDinerbyEmpresa(Integer id){
 
+        return this.moviDinerRepository.findMovimientodineroByempresaMovimientoId(id);
+    }
+
+    public List<MovimientoDinero> buscarporempleado(Empleado empleado){
+        return this.moviDinerRepository.findMovimientodineroByempleadoMovimiento(empleado);
+
+    }
+
+    public MovimientoDinero guardarOActualizarMovimiento(MovimientoDinero movimientoDinero){
+        return this.moviDinerRepository.save(movimientoDinero);
+    }
+
+    public Boolean deleteMovimiento (Integer id){
+        moviDinerRepository.deleteById(id);
+        if (this.moviDinerRepository.findById(id).isPresent()){
+            return false;
+        }
+        return true;
+    }
 }

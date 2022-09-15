@@ -14,11 +14,29 @@ public class Controller2 {
 
     @Autowired
     EmpresaServicios empresaServicios;
+    @GetMapping()
+    public String index(){
+        return "index";
+    }
     @GetMapping("/mostrarempresas")
     public String mostrarempresas( Model model ) {
         List<Empresa> listaempresas = this.empresaServicios.getAllEmpresas();
         model.addAttribute("listaempresas",listaempresas);
         return "showenterprises";   }
+
+    @GetMapping("/agregarempresas")
+    public String agregarEmpresas(){
+        return "addEnterprises";
+    }
+    @GetMapping("/agregarempleados")
+    public String agregarEmpleados(){
+        return "addUsers";
+    }
+
+    @GetMapping("/agregarmovimientos")
+    public String agregarMovimientos(){
+        return "addMoves";
+    }
 
 
 

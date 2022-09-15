@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8c3fa59-ab64-4a83-b91e-2236e53b4b4d" name="Changes" comment="Se actualiza estructura,">
-      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addEnterprises.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addMoves.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addUsers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controller2.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controller2.java" afterDir="false" />
-    </list>
+    <list default="true" id="b8c3fa59-ab64-4a83-b91e-2236e53b4b4d" name="Changes" comment="Se crea Templates agregar movimiento dinero, empresa y empleado" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,7 +192,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Se actualiza estructura," />
-    <option name="LAST_COMMIT_MESSAGE" value="Se actualiza estructura," />
+    <MESSAGE value="Se crea Templates agregar movimiento dinero, empresa y empleado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se crea Templates agregar movimiento dinero, empresa y empleado" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

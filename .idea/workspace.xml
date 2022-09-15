@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="b8c3fa59-ab64-4a83-b91e-2236e53b4b4d" name="Changes" comment="Se actualiza estructura,">
       <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/verEmpleados.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controller2.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controller2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controllers.java" afterDir="false" />
     </list>
+=======
+    <list default="true" id="b8c3fa59-ab64-4a83-b91e-2236e53b4b4d" name="Changes" comment="Se crea Templates agregar movimiento dinero, empresa y empleado" />
+>>>>>>> 266fbe7e8e9f98c90b40699256f2e8674d4df17c
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +75,7 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
@@ -81,8 +86,20 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/intellij/Desktop/ADC - 3CycleTeam/SistemaContable&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;
+>>>>>>> 266fbe7e8e9f98c90b40699256f2e8674d4df17c
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\MINTIC\SistemaContable\sistemacontable\src\main\resources\templates" />
@@ -198,7 +215,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Se actualiza estructura," />
-    <option name="LAST_COMMIT_MESSAGE" value="Se actualiza estructura," />
+    <MESSAGE value="Se crea Templates agregar movimiento dinero, empresa y empleado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se crea Templates agregar movimiento dinero, empresa y empleado" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

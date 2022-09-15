@@ -16,10 +16,12 @@ public class Controller2 {
 
     @Autowired
     EmpresaServicios empresaServicios;
+
     @Autowired
     EmpleadoService empleadoService;
 
     @GetMapping("/empresas/mostrar")
+
     public String mostrarempresas( Model model ) {
         List<Empresa> listaempresas = this.empresaServicios.getAllEmpresas();
         model.addAttribute("listaempresas",listaempresas);
@@ -31,6 +33,21 @@ public class Controller2 {
         List<Empleado> listarEmpleados = this.empleadoService.listarEmpleados();
         model.addAttribute("listarEmpleados",listarEmpleados);
         return "verEmpleados";   }
+
+    @GetMapping("/agregarempresas")
+    public String agregarEmpresas(){
+        return "addEnterprises";
+    }
+    @GetMapping("/agregarempleados")
+    public String agregarEmpleados(){
+        return "addUsers";
+    }
+
+    @GetMapping("/agregarmovimientos")
+    public String agregarMovimientos(){
+        return "addMoves";
+    }
+
 
 
 

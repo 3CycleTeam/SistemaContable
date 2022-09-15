@@ -2,8 +2,8 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <link href="css/bootstrap.min.css" rel="stylesheet" >
-    <link href="css/bootstrap.min.css.map" rel="stylesheet" >
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" >
+    <link th:href="@{/css/bootstrap.min.css.map}" rel="stylesheet" >
     <link rel="icon" type="image/x-icon" th:href="@{images/favicon.ico}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <title>3Cycle Contable--Empresas</title>
@@ -16,7 +16,7 @@
     <nav class="navbar bg-light">
         <div class="container-fluid" >
             <a class="navbar-brand" href="#">
-                <img src="images/scountable.png" alt="3CycleLogo" style="width:100px;" class="rounded-pill">
+                <img th:src="@{/images/scountable.png}" alt="3CycleLogo" style="width:100px;" class="rounded-pill">
             </a>
             <hi class="display-5 fw-bold">Sistema Contable 3CT</hi>
         </div>
@@ -162,7 +162,7 @@
         <nav class="navbar bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand ms-auto" href="#">
-                    <img src="images/logo.png" alt="3CycleLogo" style="width:180px;" class="rounded-pill">
+                    <img th:src="@{/images/logo.png}" alt="3CycleLogo" style="width:180px;" class="rounded-pill">
                 </a>
             </div>
         </nav>

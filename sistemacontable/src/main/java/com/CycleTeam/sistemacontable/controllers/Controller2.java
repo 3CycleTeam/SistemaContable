@@ -14,7 +14,7 @@ public class Controller2 {
 
     @Autowired
     EmpresaServicios empresaServicios;
-    @GetMapping("/mostrarempresas")
+    @GetMapping("/empresas/mostrar")
     public String mostrarempresas( Model model ) {
         List<Empresa> listaempresas = this.empresaServicios.getAllEmpresas();
         model.addAttribute("listaempresas",listaempresas);

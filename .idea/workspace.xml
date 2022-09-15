@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8c3fa59-ab64-4a83-b91e-2236e53b4b4d" name="Changes" comment="Se actualiza estructura,">
-      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/static/images/clear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/static/images/rocket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/static/images/scountable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/verEmpleados.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/indexJulian.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/indexJulian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controller2.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controller2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controllers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -74,9 +73,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/intellij/Desktop/ADC - 3CycleTeam/SistemaContable",
+    "last_opened_file_path": "D:/MINTIC/SistemaContable/sistemacontable/src/main/resources/templates",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -85,6 +85,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MINTIC\SistemaContable\sistemacontable\src\main\resources\templates" />
       <recent name="D:\Mintic\SistemaContable\sistemacontable\src\main\resources\templates\images" />
       <recent name="D:\Mintic\SistemaContable\sistemacontable\src\main\resources\templates\fonts" />
       <recent name="D:\Mintic\SistemaContable\sistemacontable\src\main\resources\templates\css" />
@@ -202,5 +203,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SistemaContable$SistemacontableApplication.ic" NAME="SistemacontableApplication Coverage Results" MODIFIED="1663281268488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.CycleTeam.sistemacontable.*</FILTER>
+    </SUITE>
   </component>
 </project>

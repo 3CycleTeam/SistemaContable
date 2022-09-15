@@ -66,12 +66,12 @@ public class Controllers{
     //Empleado
 
 
-    // VER EMPLEADO
+    /* VER EMPLEADO
     @GetMapping ("/Empleados")
     public List<Empleado> listarEmpleados (){
         return this.empleadoService.listarEmpleados();
 
-    }
+    }*/
 
     //POST
     @PostMapping("/Empleados")

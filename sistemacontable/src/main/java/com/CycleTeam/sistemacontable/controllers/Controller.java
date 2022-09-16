@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
 
@@ -35,8 +36,9 @@ public class Controller {
         return "verEmpleados";   }
 
     @GetMapping("/agregarempresas")
-    public String agregarEmpresas(){
-
+    public String agregarEmpresas(Model model){
+        Empresa emp= new Empresa();
+        model.addAttribute("emp",emp);
         return "addEnterprises";
     }
     @GetMapping("/agregarempleados")
@@ -59,6 +61,12 @@ public class Controller {
         this.empleadoService.guardarOActualizaEmpleado(nuevoEmpleado);
             return "redirect:/verEmpleados";
         }
+
+    @PostMapping("/guardarEmpresa")
+    public String guardarEmpresa(Empresa emp, RedirectAttributes redirectAttributes ){
+        this.empresaServicios.guardarOActualizaEmpresa(emp);
+        return "redirect:/showenterprises";
+    }
 
 
 

@@ -129,29 +129,29 @@
     <!--Crear formulario para crear los datos de la empresa  -->
     <div class="col py-3 mx-5">
       <h6>Agregar Empresa</h6>
-    <form >
+    <form th:action="@{/guardarEmpresa}" th:object="${emp}" method="post">
       <!--Campo para nombre-->
       <div class="mb-3">
         <label for="inputName" class="form-label">Nombre:</label>
-        <input type="text" class="form-control" id="inputName" aria-describedby="iName">
+        <input type="text" th:field="*{nombre}"  class="form-control" id="inputName" aria-describedby="iName">
         </div>
 
       <!--Campo para dirección-->
       <div class="mb-3">
         <label for="inputDireccion" class="form-label">Dirección:</label>
-        <input type="text" class="form-control" id="inputDireccion" aria-describedby="iDireccion">
+        <input type="text" th:field="*{direccion}" class="form-control" id="inputDireccion" aria-describedby="iDireccion">
       </div>
 
       <!--Campo para teléfono-->
       <div class=" mb-3">
         <label for="inputTelefono" class="form-label">Teléfono:</label>
-        <input type="text" class="form-control" id="inputTelefono" aria-describedby="inputTelefono">
+        <input type="text" th:field="*{telefono}" class="form-control" id="inputTelefono" aria-describedby="inputTelefono">
       </div>
 
       <!--Campo para Nit-->
       <div class="mb-3">
         <label for="inputNit" class="form-label">Nit:</label>
-        <input type="text" class="form-control" id="inputNit" aria-describedby="iNit">
+        <input type="text"th:field="*{nit}" class="form-control" id="inputNit" aria-describedby="iNit">
       </div>
 
       <button type="submit" class="btn btn-primary">Agregar</button>

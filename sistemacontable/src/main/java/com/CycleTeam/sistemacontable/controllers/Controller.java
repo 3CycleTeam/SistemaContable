@@ -36,11 +36,15 @@ public class Controller {
 
     @GetMapping("/agregarempresas")
     public String agregarEmpresas(){
+
         return "addEnterprises";
     }
     @GetMapping("/agregarempleados")
-    public String agregarEmpleados(){
+    public String agregarEmpleados(Model model ){
+        Empleado nuevoEmpleado= new Empleado();
+        model.addAttribute("nuevoEmpleado",nuevoEmpleado);
         return "addUsers";
+
     }
 
     @GetMapping("/agregarmovimientos")
@@ -51,22 +55,11 @@ public class Controller {
 
     //Agregar empleado
     @PostMapping("/agregarEmpleado")
-        public String agregarEmpleado(Empleado nuevoEmpleado){ this.empleadoService.guardarOActualizaEmpleado(nuevoEmpleado);
+        public String agregarEmpleado(Empleado nuevoEmpleado){
+        this.empleadoService.guardarOActualizaEmpleado(nuevoEmpleado);
             return "redirect:/verEmpleados";
-
-
-        /*@PostMapping("/GuardarEmpleado")
-        public String guardarEmpleado(Empleado empl, RedirectAttributes redirectAttributes){
-        /*String passEncriptada=passwordEncoder().encode(empl.getPassword());
-        empl.setPassword(passEncriptada);
-            if(empleadoService.saveOrUpdateEmpleado(empl)==true){
-                redirectAttributes.addFlashAttribute("mensaje","saveOK");
-                return "redirect:/VerEmpleados";
-            }
-            redirectAttributes.addFlashAttribute("mensaje","saveError");
-            return "redirect:/AgregarEmpleado";*/
-
         }
+
 
 
 

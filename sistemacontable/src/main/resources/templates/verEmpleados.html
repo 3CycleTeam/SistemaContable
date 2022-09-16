@@ -145,7 +145,7 @@
                 <tr th:each="empleados: ${listarEmpleados}">
                     <td th:text="${empleados.nombre}"></td>
                     <td th:text="${empleados.correo}"></td>
-                    <td th:text="${empleados.empresaPertenece}"></td>
+                    <td th:text="${empleados.empresaPertenece.nombre}"></td>
                     <td th:text="${empleados.rolEmpleado}"></td>
 
                 </tr>

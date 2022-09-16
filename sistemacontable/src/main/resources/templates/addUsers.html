@@ -129,30 +129,30 @@
 
         <!--Crear formulario para llenar los datos del empleado  -->
         <div class="col py-3 mx-5">
-        <form class="form control col-md-5">
+        <form class="form control col-md-5" th:action="@{agregarEmpleado}" th:object="${nuevoEmpleado}" method="post">
             <!--Campo para nombre-->
             <div class="mb-3">
-                <label for="inputNameEmpl" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="inputNameEmpl" aria-describedby="iNameEmpl">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" th:field="*{nombre}" class="form-control" id="nombre" aria-describedby="iNameEmpl" required="required">
             </div>
 
             <!--Campo para correo electrónico-->
             <div class="mb-3">
                 <label for="inputEmail1" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control"
+                <input type="email" th:field="*{correo}" class="form-control"
                        id="inputEmail1" aria-describedby="iemail">
             </div>
 
             <!--Campo para empresa pertenece-->
             <div class="mb-3">
                 <label for="inputEmpresaP" class="form-label">Empresa:</label>
-                <input type="text" class="form-control" id="inputEmpresaP" aria-describedby="iEmpresaP">
+                <input type="text" th:field="*{empresaPertenece}" class="form-control" id="inputEmpresaP" aria-describedby="iEmpresaP">
             </div>
 
             <!--Campo para rol-->
             <div class="mb-3">
                 <label for="inputRol" class="form-label">Rol:</label>
-                <input type="text" class="form-control" id="inputRol" aria-describedby="iRol">
+                <input type="text" th:field="*{rolEmpleado}" class="form-control" id="inputRol" aria-describedby="iRol">
             </div>
 
             <!--Campo para password-->
@@ -161,8 +161,10 @@
                 <input type="password" class="form-control" id="inputPassword">
             </div>
 
-
+            <!--BOTÓN -->
             <button type="submit" class="btn btn-primary">Agregar</button>
+
+
         </form>
         </div>
     </div>

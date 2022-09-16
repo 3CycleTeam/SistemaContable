@@ -5,14 +5,14 @@ import com.CycleTeam.sistemacontable.entities.Empresa;
 import com.CycleTeam.sistemacontable.services.EmpleadoService;
 import com.CycleTeam.sistemacontable.services.EmpresaServicios;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@Controller
-public class Controller2 {
+@org.springframework.stereotype.Controller
+public class Controller {
 
     @Autowired
     EmpresaServicios empresaServicios;
@@ -48,6 +48,25 @@ public class Controller2 {
         return "addMoves";
     }
 
+
+    //Agregar empleado
+    @PostMapping("/agregarEmpleado")
+        public String agregarEmpleado(Empleado nuevoEmpleado){ this.empleadoService.guardarOActualizaEmpleado(nuevoEmpleado);
+            return "redirect:/verEmpleados";
+
+
+        /*@PostMapping("/GuardarEmpleado")
+        public String guardarEmpleado(Empleado empl, RedirectAttributes redirectAttributes){
+        /*String passEncriptada=passwordEncoder().encode(empl.getPassword());
+        empl.setPassword(passEncriptada);
+            if(empleadoService.saveOrUpdateEmpleado(empl)==true){
+                redirectAttributes.addFlashAttribute("mensaje","saveOK");
+                return "redirect:/VerEmpleados";
+            }
+            redirectAttributes.addFlashAttribute("mensaje","saveError");
+            return "redirect:/AgregarEmpleado";*/
+
+        }
 
 
 

@@ -83,10 +83,12 @@ public class Controller {
         return "redirect:/empresas/mostrar";
     }
 
-
-
-
-
+    @GetMapping("/eliminarEmpresa/{id}")
+    public String eliminarEmpresa(@PathVariable Integer id ){
+        Empresa emp = empresaServicios.getEmpresaById(id);
+        empresaServicios.deleteEmpresa(id);
+        return "showenterprises";
+    }
 
     }
 

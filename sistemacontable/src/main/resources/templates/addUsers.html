@@ -146,16 +146,23 @@
             <!--Campo para empresa pertenece-->
             <div class="mb-3">
                 <label for="inputEmpresaP" class="form-label">Empresa:</label>
-                <input type="text" th:field="*{empresaPertenece}" class="form-control" id="inputEmpresaP" aria-describedby="iEmpresaP">
+            <!--    <input type="text" th:field="*{empresaPertenece}" class="form-control" id="inputEmpresaP" aria-describedby="iEmpresaP"> -->
+
+                <select class="form-select" id="inputEmpresaP"  th:field="*{empresaPertenece}">
+                    <option th:each="empresas : ${listaEmpresas}" th:value="${empresas.id}" th:text="${empresas.nombre}"></option>
+                </select>
             </div>
 
             <!--Campo para rol-->
             <div class="mb-3">
                 <label for="inputRol" class="form-label">Rol:</label>
-                <input type="text" th:field="*{rolEmpleado}" class="form-control" id="inputRol" aria-describedby="iRol">
-            </div>
+                <select class="form-select" id="inputRol"  th:field="*{rolEmpleado}">
+                     <option th:each="perfiles : ${listaPerfiles}" th:value="${perfiles.id}" th:text="${perfiles.nombreRol}"></option>
+                 </select>
+             </div>
 
-            <!--Campo para password-->
+
+             <!--Campo para password-->
             <div class="mb-3">
                 <label for="inputPassword" class="form-label">Contraseña</label>
                 <input type="password" class="form-control" id="inputPassword">

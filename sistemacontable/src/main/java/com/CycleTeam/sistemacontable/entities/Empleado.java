@@ -23,10 +23,12 @@ public class Empleado {
   @JoinColumn(name = "empresa_pertenece_id")
   private Empresa empresaPertenece;
   private String correo;
-  private String rolEmpleado;
+  @ManyToOne
+  @JoinColumn(name = "rol_empleado_id")
+  private Perfil rolEmpleado;
 
   //Constructor 
-  public Empleado(String nombre, String correo, Empresa empresaPertenece, String rolEmpleado) {
+  public Empleado(String nombre, String correo, Empresa empresaPertenece, Perfil rolEmpleado) {
         this.nombre = nombre;
         this.correo = correo;
         this.empresaPertenece = empresaPertenece;

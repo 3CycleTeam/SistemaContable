@@ -2,8 +2,10 @@ package com.CycleTeam.sistemacontable.controllers;
 
 import com.CycleTeam.sistemacontable.entities.Empleado;
 import com.CycleTeam.sistemacontable.entities.Empresa;
+import com.CycleTeam.sistemacontable.entities.Perfil;
 import com.CycleTeam.sistemacontable.services.EmpleadoService;
 import com.CycleTeam.sistemacontable.services.EmpresaServicios;
+import com.CycleTeam.sistemacontable.services.PerfilService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,6 +26,8 @@ public class Controller {
 
     @Autowired
     EmpleadoService empleadoService;
+    @Autowired
+    PerfilService perfilService;
 
     @GetMapping("/empresas/mostrar")
 
@@ -48,7 +52,11 @@ public class Controller {
     @GetMapping("/agregarempleados")
     public String agregarEmpleados(Model model ){
         Empleado nuevoEmpleado= new Empleado();
+        List<Empresa> listaEmpresas= this.empresaServicios.getAllEmpresas();
+        List<Perfil> listaPerfiles= this.perfilService.getPerfiles();
         model.addAttribute("nuevoEmpleado",nuevoEmpleado);
+        model.addAttribute("listaEmpresas",listaEmpresas);
+        model.addAttribute("listaPerfiles",listaPerfiles);
         return "addUsers";
 
     }

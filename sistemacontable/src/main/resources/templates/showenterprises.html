@@ -135,6 +135,8 @@
 
             <table class="table container table-hover table-striped text-center">
                 <thead>
+
+                    <th>Id</th>
                     <th>Nombre</th>
                     <th>Direccion</th>
                     <th>Telefono</th>
@@ -143,10 +145,12 @@
                 <tbody>
                 </tr>
                 <tr th:each="empresas:${listaempresas}">
+                    <td th:text="${empresas.id}"></td>
                     <td th:text="${empresas.nombre}"></td>
                     <td th:text="${empresas.direccion}"></td>
                     <td th:text="${empresas.telefono}"></td>
                     <td th:text="${empresas.nit}"></td>
+
 
                 </tr>
 

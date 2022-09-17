@@ -7,6 +7,8 @@ import com.CycleTeam.sistemacontable.services.EmpresaServicios;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -68,9 +70,24 @@ public class Controller {
         return "redirect:/showenterprises";
     }
 
+    @GetMapping("/editarEmpresa/{id}")
+    public String editarEmpresa(Model model, @PathVariable Integer id ){
+        Empresa emp = empresaServicios.getEmpresaById(id);
+        model.addAttribute("emp",emp);
+        return "editEnterprises";
+
+    }
+    @PostMapping("/actualizarEmpresa")
+    public String ActualizarEmpresa(Empresa emp, RedirectAttributes redirectAttributes ) {
+        this.empresaServicios.guardarOActualizaEmpresa(emp);
+        return "redirect:/empresas/mostrar";
+    }
 
 
 
-}
+
+
+
+    }
 
 

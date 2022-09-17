@@ -51,7 +51,7 @@ public class RestControllers {
         return empresaServicios.guardarOActualizaEmpresa(emp);
     }
 
-    @DeleteMapping ("/Empresas/{id}")
+    /*@DeleteMapping ("/Empresas/{id}")
     public String DeleteEmpresa(@PathVariable("id") Integer id){
        boolean respuestas=this.empresaServicios.deleteEmpresa(id);
        if(respuestas){
@@ -61,7 +61,7 @@ public class RestControllers {
            return "No se pudo eliminar la empresa con Id"+id;
        }
 
-    }
+    }*/
 
     //Empleado
 

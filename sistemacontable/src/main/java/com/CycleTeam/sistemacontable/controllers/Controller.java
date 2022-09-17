@@ -77,7 +77,7 @@ public class Controller {
     @PostMapping("/guardarEmpresa")
     public String guardarEmpresa(Empresa emp, RedirectAttributes redirectAttributes ){
         this.empresaServicios.guardarOActualizaEmpresa(emp);
-        return "redirect:/showenterprises";
+        return "redirect:/empresas/mostrar";
     }
 
     @GetMapping("/editarEmpresa/{id}")
@@ -97,7 +97,7 @@ public class Controller {
     public String eliminarEmpresa(@PathVariable Integer id ){
         Empresa emp = empresaServicios.getEmpresaById(id);
         empresaServicios.deleteEmpresa(id);
-        return "showenterprises";
+        return "redirect:/empresas/mostrar";
     }
 
     }

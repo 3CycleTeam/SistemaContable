@@ -7,6 +7,7 @@ import com.CycleTeam.sistemacontable.services.EmpleadoService;
 import com.CycleTeam.sistemacontable.services.EmpresaServicios;
 import com.CycleTeam.sistemacontable.services.PerfilService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -28,6 +29,7 @@ public class Controller {
     EmpleadoService empleadoService;
     @Autowired
     PerfilService perfilService;
+
 
     @GetMapping("/empresas/mostrar")
 

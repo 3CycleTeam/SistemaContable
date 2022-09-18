@@ -33,91 +33,7 @@
 
 </header>
 
-<div class="container-fluid " >
-    <div class="row ">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light "><!--Abre Barra Lateral-->
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-primary min-vh-100">
-                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <span class="fs-5 d-none d-sm-inline">Menu</span>
-                    </a>
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start " id="menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0 text-primary">
-                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-primary">
-                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Usuarios</span>
-                            </a>
-                            <ul class="collapse  nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Item</span> 1 </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Item</span> 2 </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-primary ">
-                                <i class="fs-4 bi-building"></i> <span class="ms-1 d-none d-sm-inline">Empresas</span></a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="/mostrarempresas" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary"></span>Listar Empresas</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary ">Item</span> 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-primary">
-                                <i class="fs-4 bi-cash"></i> <span class="ms-1 d-none d-sm-inline">Movimientos de dinero</span> </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Product</span> 1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Product</span> 2</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary ">Product</span> 3</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Product</span> 4</a>
-                                </li>
-                            </ul>
-                        </li>
 
-                    </ul>
-
-                    <hr>
-                    <div class="dropdown pb-4">
-                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle text-primary"
-                           id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30"
-                                 class="rounded-circle">
-                            <span class="d-none d-sm-inline mx-1 text-primary">Usuario</span>
-                            <span class="d-none d-sm-inline mx-1">
-                            <img src="images/logo.png"  alt="3CycleLogo" style="width:100px;" class="rounded-pill">
-
-                        </span>
-                        </a>
-
-                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                            <li><a class="dropdown-item" href="#">New project...</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!-- Cierre Barra Lateral-->
 
 
 
@@ -125,26 +41,30 @@
 
                     <tbody>
                     <!--REGISTRESE AQUI-->
+                    <div class=" d-flex justify-content-center align-items-center ">
                         <form action="/action_page.php">
-                            <div class="mb-3 mt-3 ">
+
+                            <div class="mb-6 d-flex justify-content-center align-items-center">
                                 <label for="email" class="form-label text-center">Email:</label>
-                                <div class="row-3 col-xs-3">
-                                    <input type="email" class= id="email" placeholder="Enter email" name="email">
-                                </div>
                             </div>
-                            <div class="mb-3">
+                            <div class="row-3 col-xs-3 d-flex justify-content-center align-items-center">
+                                <input type="email" class= id="email" placeholder="Enter email" name="email">
+                            </div>
+                            <div class="mb-6 d-flex justify-content-center align-items-center">
                                 <label for="pwd" class="form-label">Password:</label>
-                                <div class="row-3 col-xs-3">
-                                <input type="password" class= id="pwd" placeholder="Enter password" name="pswd">
-                                </div>
                             </div>
-                            <div class="mb-3">
+                            <div class="row-3 col-xs-3 d-flex justify-content-center align-items-center">
+                                <input type="password" class= id="pwd" placeholder="Enter password" name="pswd">
+                            </div>
+
+                            <div class="mb-3 d-flex justify-content-center align-items-center">
                                 <h1 class="fs-6 text-primary "> ¿Olvidaste tu contraseña?<h1>
                             </div>
                             <a href="/login" type="submit" class="btn btn-primary">Iniciar Sesión</a>
                             <a href="/nuevaCuenta" type="submit" class="btn btn-secondary">Crear cuenta nueva</a>
 
                         </form>
+                    </div>
 
 
                     </tbody>

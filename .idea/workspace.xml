@@ -11,6 +11,7 @@
       <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/layout/menu.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/sistemacontable/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addEnterprises.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addEnterprises.html" afterDir="false" />
@@ -18,6 +19,9 @@
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/editEnterprises.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/editEnterprises.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/showenterprises.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/showenterprises.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controller.java" afterDir="false" />
+>>>>>>> a2c07a07f163589e7a6649e90a519d58f78cfaae
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/verEmpleados.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/verEmpleados.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +93,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/intellij/Desktop/ADC - 3CycleTeam/SistemaContable/sistemacontable/src/main/resources/templates&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Documents/GitHub/SistemaContable/sistemacontable/src/main/resources/templates&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -98,11 +102,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\Documents\GitHub\SistemaContable\sistemacontable\src\main\resources\templates" />
       <recent name="C:\Users\intellij\Desktop\ADC - 3CycleTeam\SistemaContable\sistemacontable\src\main\resources\templates" />
       <recent name="D:\MINTIC\SistemaContable\sistemacontable\src\main\resources\templates" />
       <recent name="D:\Mintic\SistemaContable\sistemacontable\src\main\resources\templates\images" />
       <recent name="D:\Mintic\SistemaContable\sistemacontable\src\main\resources\templates\fonts" />
-      <recent name="D:\Mintic\SistemaContable\sistemacontable\src\main\resources\templates\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\MINTIC\SistemaContable\sistemacontable\src\main\resources\templates\layout" />

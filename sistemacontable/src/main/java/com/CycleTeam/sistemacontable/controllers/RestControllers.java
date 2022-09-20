@@ -166,6 +166,12 @@ public class RestControllers {
         }
     }
 
+    @GetMapping("juliang")
+    public List<Empleado> regresar()
+    {   Empresa empresa = this.empresaPorId(1);
+        return this.empleadoService.empleadosByEmpresa(empresa);
+    }
+
 
 }
 

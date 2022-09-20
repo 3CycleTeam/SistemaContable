@@ -27,8 +27,10 @@ public class Empleado {
   @JoinColumn(name = "rol_empleado_id")
   private Perfil rolEmpleado;
 
+  private String contrasena;
+
   //Constructor 
-  public Empleado(String nombre, String correo, Empresa empresaPertenece, Perfil rolEmpleado) {
+  public Empleado(String nombre, String correo, Empresa empresaPertenece, Perfil rolEmpleado) {///pendiente agregar en constructor contrasena
         this.nombre = nombre;
         this.correo = correo;
         this.empresaPertenece = empresaPertenece;

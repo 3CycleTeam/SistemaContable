@@ -36,6 +36,11 @@ EmpleadoRepository empleadoRepository;
        return true;
     }
 
+    public List<Empleado> empleadosByEmpresa(Empresa empresa){
+
+        return this.empleadoRepository.findEmpleadoByempresaPertenece(empresa);
+    }
+
     }
 
 

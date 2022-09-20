@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
+import java.util.Optional;
 
 @org.springframework.stereotype.Controller
 public class Controller {
@@ -38,29 +39,11 @@ public class Controller {
         model.addAttribute("listaempresas",listaempresas);
         return "showenterprises";   }
 
-    @GetMapping ("/Empleados")
-    public String mostrarempleados( Model model ) {
-
-        List<Empleado> listarEmpleados = this.empleadoService.listarEmpleados();
-        model.addAttribute("listarEmpleados",listarEmpleados);
-        return "verEmpleados";   }
-
     @GetMapping("/agregarempresas")
     public String agregarEmpresas(Model model){
         Empresa emp= new Empresa();
         model.addAttribute("emp",emp);
         return "addEnterprises";
-    }
-    @GetMapping("/agregarempleados")
-    public String agregarEmpleados(Model model ){
-        Empleado nuevoEmpleado= new Empleado();
-        List<Empresa> listaEmpresas= this.empresaServicios.getAllEmpresas();
-        List<Perfil> listaPerfiles= this.perfilService.getPerfiles();
-        model.addAttribute("nuevoEmpleado",nuevoEmpleado);
-        model.addAttribute("listaEmpresas",listaEmpresas);
-        model.addAttribute("listaPerfiles",listaPerfiles);
-        return "addUsers";
-
     }
 
     @GetMapping("/agregarmovimientos")
@@ -68,13 +51,6 @@ public class Controller {
         return "addMoves";
     }
 
-
-    //Agregar empleado
-    @PostMapping("/agregarEmpleado")
-        public String agregarEmpleado(Empleado nuevoEmpleado){
-        this.empleadoService.guardarOActualizaEmpleado(nuevoEmpleado);
-            return "redirect:/verEmpleados";
-        }
 
     @PostMapping("/guardarEmpresa")
     public String guardarEmpresa(Empresa emp, RedirectAttributes redirectAttributes ){
@@ -96,11 +72,65 @@ public class Controller {
     }
 
     @GetMapping("/eliminarEmpresa/{id}")
-    public String eliminarEmpresa(@PathVariable Integer id ){
+
+    public String eliminarEmpresa(@PathVariable Integer id){
+
         Empresa emp = empresaServicios.getEmpresaById(id);
         empresaServicios.deleteEmpresa(id);
         return "redirect:/empresas/mostrar";
     }
 
+    @GetMapping("/empleadosxempresa")
+    public String verEmpleadosPorEmpresa(Model model ){
+        List<Empresa> listaEmpresas= this.empresaServicios.getAllEmpresas();
+        model.addAttribute("listaEmpresas",listaEmpresas);
+
+        return "verEmpleadosEmpresa";
     }
+
+    @GetMapping ("/empleadosxempresa/{id}")
+    public String mostrarempleadosPorEmpresa( Model model,@PathVariable int id ) {
+        Empresa empresa = this.empresaServicios.getEmpresaById(id);
+        System.out.println(empresa.getNombre());
+        List<Empleado> listarEmpleados = this.empleadoService.empleadosByEmpresa(empresa);
+        model.addAttribute("listarEmpleados",listarEmpleados);
+        return "verEmpleados";   }
+
+
+    // *****INICIO CONTROLLER EMPLEADO*****
+
+    //Agregar empleado
+    @PostMapping("/agregarEmpleado")
+    public String agregarEmpleado(Empleado nuevoEmpleado){
+        this.empleadoService.guardarOActualizaEmpleado(nuevoEmpleado);
+        return "redirect:/verEmpleados";
+    }
+
+    @GetMapping("/eliminarEmpleado/{id}")
+    public String eliminarEmpleado (@PathVariable Integer id){
+        Optional<Empleado> empleadoUno = empleadoService.getEmpleadoById(id);
+        empleadoService.deleteEmpleado(id);
+        return "redirect:/Empleados";
+    }
+
+    @GetMapping("/agregarempleados")
+    public String agregarEmpleados(Model model ){
+        Empleado nuevoEmpleado= new Empleado();
+        List<Empresa> listaEmpresas= this.empresaServicios.getAllEmpresas();
+        List<Perfil> listaPerfiles= this.perfilService.getPerfiles();
+        model.addAttribute("nuevoEmpleado",nuevoEmpleado);
+        model.addAttribute("listaEmpresas",listaEmpresas);
+        model.addAttribute("listaPerfiles",listaPerfiles);
+        return "addUsers";
+
+    }
+
+    @GetMapping ("/Empleados")
+    public String mostrarempleados( Model model ) {
+
+        List<Empleado> listarEmpleados = this.empleadoService.listarEmpleados();
+        model.addAttribute("listarEmpleados",listarEmpleados);
+        return "verEmpleados";   }
+
+}
 

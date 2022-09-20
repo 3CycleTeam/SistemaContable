@@ -96,11 +96,30 @@ public class Controller {
     }
 
     @GetMapping("/eliminarEmpresa/{id}")
-    public String eliminarEmpresa(@PathVariable Integer id ){
+
+    public String eliminarEmpresa(@PathVariable Integer id){
+
         Empresa emp = empresaServicios.getEmpresaById(id);
         empresaServicios.deleteEmpresa(id);
         return "redirect:/empresas/mostrar";
     }
 
+    @GetMapping("/empleadosxempresa")
+    public String verEmpleadosPorEmpresa(Model model ){
+        List<Empresa> listaEmpresas= this.empresaServicios.getAllEmpresas();
+        model.addAttribute("listaEmpresas",listaEmpresas);
+
+        return "verEmpleadosEmpresa";
     }
+
+    @GetMapping ("/empleadosxempresa/{id}")
+    public String mostrarempleadosPorEmpresa( Model model,@PathVariable int id ) {
+        Empresa empresa = this.empresaServicios.getEmpresaById(id);
+        System.out.println(empresa.getNombre());
+        List<Empleado> listarEmpleados = this.empleadoService.empleadosByEmpresa(empresa);
+        model.addAttribute("listarEmpleados",listarEmpleados);
+        return "verEmpleados";   }
+
+
+}
 

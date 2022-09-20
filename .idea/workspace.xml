@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8c3fa59-ab64-4a83-b91e-2236e53b4b4d" name="Changes" comment="Se crea Templates agregar movimiento dinero, empresa y empleado">
+      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/layout/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/layout/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/layout/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addEnterprises.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addEnterprises.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addUsers.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addUsers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/editEnterprises.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/editEnterprises.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/showenterprises.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/showenterprises.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/verEmpleados.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/verEmpleados.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,11 +105,11 @@
       <recent name="D:\Mintic\SistemaContable\sistemacontable\src\main\resources\templates\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MINTIC\SistemaContable\sistemacontable\src\main\resources\templates\layout" />
       <recent name="D:\MINTIC\SistemaContable\sistemacontable\src\main\resources\templates\fragments" />
       <recent name="D:\Mintic\SistemaContable\sistemacontable\src\main\resources\static" />
       <recent name="D:\Mintic\SistemaContable\sistemacontable\src\main\resources\static\images\css" />
       <recent name="D:\Mintic\SistemaContable\sistemacontable\src\main\resources\templates" />
-      <recent name="C:\Users\PC\Documents\GitHub\SistemaContable\sistemacontable\src\main\resources\static\images" />
     </key>
   </component>
   <component name="RunManager" selected="Application.SistemacontableApplication">

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link href="css/bootstrap.min.css.map" rel="stylesheet" >
+    <link rel="icon" type="image/x-icon" th:href="@{images/favicon.ico}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <title>3Cycle Contable</title>
+</head>
+
+<body>
+
+<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar bg-primary text-white">
+    <a class="navbar-brand mr-0 mr-md-2" href="#" aria-label="Bootstrap"><img src="images/scountable.png" alt="3CycleLogo" style="width:100px;" class="rounded-pill">
+    </a>
+
+
+    <div class="d-flex flex-row-reverse">
+        <div>
+            <div id="hero" role="banner">
+                <div class="container">
+                    <div class="center relative">
+                        <div class="p-2 fs-1 ">Sistema Contable 3CT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</header>
+
+
+
+
+
+            <div class="col py-3 mx-5 "><!--Abre Contenido-->
+
+                    <tbody>
+                    <!--REGISTRESE AQUI-->
+                    <div class=" d-flex justify-content-center align-items-center ">
+                        <form action="/action_page.php">
+
+                            <div class="mb-6 d-flex justify-content-center align-items-center">
+                                <label for="email" class="form-label text-center">Email:</label>
+                            </div>
+                            <div class="row-3 col-xs-3 d-flex justify-content-center align-items-center">
+                                <input type="email" class= id="email" placeholder="Enter email" name="email">
+                            </div>
+                            <div class="mb-6 d-flex justify-content-center align-items-center">
+                                <label for="pwd" class="form-label">Password:</label>
+                            </div>
+                            <div class="row-3 col-xs-3 d-flex justify-content-center align-items-center">
+                                <input type="password" class= id="pwd" placeholder="Enter password" name="pswd">
+                            </div>
+
+                            <div class="mb-3 d-flex justify-content-center align-items-center">
+                                <h1 class="fs-6 text-primary "> ¿Olvidaste tu contraseña?<h1>
+                            </div>
+                            <a href="/login" type="submit" class="btn btn-primary">Iniciar Sesión</a>
+                            <a href="/nuevaCuenta" type="submit" class="btn btn-secondary">Crear cuenta nueva</a>
+
+                        </form>
+                    </div>
+
+
+                    </tbody>
+                <div class="mb-3 mt3 ">
+                    <img src="images/astronaut.png" class="rounded float-end" alt="...">
+                </div>
+
+            </div>
+
+
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
+

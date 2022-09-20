@@ -7,14 +7,10 @@ import com.CycleTeam.sistemacontable.services.EmpleadoService;
 import com.CycleTeam.sistemacontable.services.EmpresaServicios;
 import com.CycleTeam.sistemacontable.services.PerfilService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
@@ -31,14 +27,19 @@ public class Controller {
     @Autowired
     PerfilService perfilService;
 
+    // *****INICIO CONTROLLER EMPRESA*****
 
+
+    //Mostrar Empresa
     @GetMapping("/empresas/mostrar")
 
     public String mostrarempresas( Model model ) {
         List<Empresa> listaempresas = this.empresaServicios.getAllEmpresas();
         model.addAttribute("listaempresas",listaempresas);
-        return "showenterprises";   }
+        return "showenterprises";
+    }
 
+    //Agregar Empresa
     @GetMapping("/agregarempresas")
     public String agregarEmpresas(Model model){
         Empresa emp= new Empresa();
@@ -46,25 +47,22 @@ public class Controller {
         return "addEnterprises";
     }
 
-    @GetMapping("/agregarmovimientos")
-    public String agregarMovimientos(){
-        return "addMoves";
-    }
-
-
+    //Guardar Empresa
     @PostMapping("/guardarEmpresa")
     public String guardarEmpresa(Empresa emp, RedirectAttributes redirectAttributes ){
         this.empresaServicios.guardarOActualizaEmpresa(emp);
         return "redirect:/empresas/mostrar";
     }
 
+    //Editar Empresa
     @GetMapping("/editarEmpresa/{id}")
     public String editarEmpresa(Model model, @PathVariable Integer id ){
         Empresa emp = empresaServicios.getEmpresaById(id);
         model.addAttribute("emp",emp);
         return "editEnterprises";
-
     }
+
+    //Actualizar Empresa
     @PostMapping("/actualizarEmpresa")
     public String ActualizarEmpresa(Empresa emp, RedirectAttributes redirectAttributes ) {
         this.empresaServicios.guardarOActualizaEmpresa(emp);
@@ -80,6 +78,47 @@ public class Controller {
         return "redirect:/empresas/mostrar";
     }
 
+
+
+    // *****INICIO CONTROLLER EMPLEADO*****
+
+
+
+    // Mostrar empleados
+    @GetMapping ("/Empleados")
+    public String mostrarempleados( Model model ) {
+        List<Empleado> listarEmpleados = this.empleadoService.listarEmpleados();
+        model.addAttribute("listarEmpleados",listarEmpleados);
+        return "verEmpleados";
+    }
+
+    // Agregar empleado
+    @PostMapping("/agregarEmpleado")
+    public String agregarEmpleado(Empleado nuevoEmpleado){
+        this.empleadoService.guardarOActualizaEmpleado(nuevoEmpleado);
+        return "redirect:/verEmpleados";
+    }
+
+    @GetMapping("/agregarempleados")
+    public String agregarEmpleados(Model model ){
+        Empleado nuevoEmpleado= new Empleado();
+        List<Empresa> listaEmpresas= this.empresaServicios.getAllEmpresas();
+        List<Perfil> listaPerfiles= this.perfilService.getPerfiles();
+        model.addAttribute("nuevoEmpleado",nuevoEmpleado);
+        model.addAttribute("listaEmpresas",listaEmpresas);
+        model.addAttribute("listaPerfiles",listaPerfiles);
+        return "addUsers";
+    }
+
+    // Eliminar empleado
+    @GetMapping("/eliminarEmpleado/{id}")
+    public String eliminarEmpleado (@PathVariable Integer id){
+        Optional<Empleado> empleadoUno = empleadoService.getEmpleadoById(id);
+        empleadoService.deleteEmpleado(id);
+        return "redirect:/Empleados";
+    }
+
+
     @GetMapping("/empleadosxempresa")
     public String verEmpleadosPorEmpresa(Model model ){
         List<Empresa> listaEmpresas= this.empresaServicios.getAllEmpresas();
@@ -94,43 +133,18 @@ public class Controller {
         System.out.println(empresa.getNombre());
         List<Empleado> listarEmpleados = this.empleadoService.empleadosByEmpresa(empresa);
         model.addAttribute("listarEmpleados",listarEmpleados);
-        return "verEmpleados";   }
-
-
-    // *****INICIO CONTROLLER EMPLEADO*****
-
-    //Agregar empleado
-    @PostMapping("/agregarEmpleado")
-    public String agregarEmpleado(Empleado nuevoEmpleado){
-        this.empleadoService.guardarOActualizaEmpleado(nuevoEmpleado);
-        return "redirect:/verEmpleados";
+        return "verEmpleados";
     }
 
-    @GetMapping("/eliminarEmpleado/{id}")
-    public String eliminarEmpleado (@PathVariable Integer id){
-        Optional<Empleado> empleadoUno = empleadoService.getEmpleadoById(id);
-        empleadoService.deleteEmpleado(id);
-        return "redirect:/Empleados";
+
+
+    // *****INICIO CONTROLLER MOVIMIENTO DINERO*****
+
+
+    //Agregar Movimiento de Dinero
+    @GetMapping("/agregarmovimientos")
+    public String agregarMovimientos(){
+        return "addMoves";
     }
-
-    @GetMapping("/agregarempleados")
-    public String agregarEmpleados(Model model ){
-        Empleado nuevoEmpleado= new Empleado();
-        List<Empresa> listaEmpresas= this.empresaServicios.getAllEmpresas();
-        List<Perfil> listaPerfiles= this.perfilService.getPerfiles();
-        model.addAttribute("nuevoEmpleado",nuevoEmpleado);
-        model.addAttribute("listaEmpresas",listaEmpresas);
-        model.addAttribute("listaPerfiles",listaPerfiles);
-        return "addUsers";
-
-    }
-
-    @GetMapping ("/Empleados")
-    public String mostrarempleados( Model model ) {
-
-        List<Empleado> listarEmpleados = this.empleadoService.listarEmpleados();
-        model.addAttribute("listarEmpleados",listarEmpleados);
-        return "verEmpleados";   }
-
 }
 

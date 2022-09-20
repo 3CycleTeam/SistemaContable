@@ -11,7 +11,7 @@
       <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/layout/menu.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
+
       <change beforePath="$PROJECT_DIR$/sistemacontable/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addEnterprises.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addEnterprises.html" afterDir="false" />
@@ -19,9 +19,7 @@
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/editEnterprises.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/editEnterprises.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/showenterprises.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/showenterprises.html" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controller.java" afterDir="false" />
->>>>>>> a2c07a07f163589e7a6649e90a519d58f78cfaae
+
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/verEmpleados.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/verEmpleados.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

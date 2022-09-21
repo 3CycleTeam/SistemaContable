@@ -126,7 +126,6 @@ public class Controller {
         return "redirect:/Empleados";
     }
 
-
     @GetMapping("/empleadosxempresa")
     public String verEmpleadosPorEmpresa(Model model ){
         List<Empresa> listaEmpresas= this.empresaServicios.getAllEmpresas();

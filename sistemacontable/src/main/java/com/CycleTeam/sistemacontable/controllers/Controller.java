@@ -157,5 +157,23 @@ public class Controller {
         model.addAttribute("listaMovimientos",listaMovimientos);
         return"verMovimientos";
     }
+
+    //////////////////////////////////////////////////////////////////////////////
+    @GetMapping("/editarMovimiento/{id}")
+    public String editarMovimiento(Model model, @PathVariable Integer id ){
+        MovimientoDinero movimiento = this.movimientosService.buscarMoviDinerbyId(id);
+        model.addAttribute("movimiento",movimiento);
+        return "editarMovimiento";
+    }
+
+    //Actualizar Empresa
+    @PostMapping("/actualizarMovimiento")
+    public String ActualizarEmpresa(MovimientoDinero movimiento, RedirectAttributes redirectAttributes ) {
+        this.movimientosService.guardarOActualizarMovimiento(movimiento);
+        return "redirect:/verMovimientos";
+    }
+    //////////////////////////////////////////////////////////////////////////////
+
+
 }
 

@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import javax.persistence.*;
+import java.time.LocalDate;
 
 @NoArgsConstructor
 @Setter
@@ -23,6 +24,8 @@ public class MovimientoDinero {
     @ManyToOne
     @JoinColumn(name = "empresa_movimiento_id")
     private Empresa empresaMovimiento;
+
+    private LocalDate fecha;
     public MovimientoDinero(Float movimientoDinero, String conceptoMovimiento, Empleado empleadoMovimiento) {
         this.movimientoDinero = movimientoDinero;
         this.conceptoMovimiento = conceptoMovimiento;

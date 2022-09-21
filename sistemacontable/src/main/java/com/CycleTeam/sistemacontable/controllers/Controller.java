@@ -2,9 +2,11 @@ package com.CycleTeam.sistemacontable.controllers;
 
 import com.CycleTeam.sistemacontable.entities.Empleado;
 import com.CycleTeam.sistemacontable.entities.Empresa;
+import com.CycleTeam.sistemacontable.entities.MovimientoDinero;
 import com.CycleTeam.sistemacontable.entities.Perfil;
 import com.CycleTeam.sistemacontable.services.EmpleadoService;
 import com.CycleTeam.sistemacontable.services.EmpresaServicios;
+import com.CycleTeam.sistemacontable.services.MoviDinerService;
 import com.CycleTeam.sistemacontable.services.PerfilService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
@@ -26,6 +28,8 @@ public class Controller {
     EmpleadoService empleadoService;
     @Autowired
     PerfilService perfilService;
+    @Autowired
+    MoviDinerService movimientosService;
 
     // *****INICIO CONTROLLER EMPRESA*****
 
@@ -145,6 +149,13 @@ public class Controller {
     @GetMapping("/agregarmovimientos")
     public String agregarMovimientos(){
         return "addMoves";
+    }
+
+    @GetMapping("verMovimientos")
+    public String mostrarMovimientos (Model model){
+        List<MovimientoDinero> listaMovimientos = this.movimientosService.getAllMovimientoDinero();
+        model.addAttribute("listaMovimientos",listaMovimientos);
+        return"verMovimientos";
     }
 }
 

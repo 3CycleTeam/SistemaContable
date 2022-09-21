@@ -19,6 +19,7 @@ EmpleadoRepository empleadoRepository;
     }
 
     public Empleado guardarOActualizaEmpleado(Empleado empleado){
+
         return empleadoRepository.save(empleado);
     }
 

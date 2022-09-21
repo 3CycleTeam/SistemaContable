@@ -129,6 +129,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="pruebasJG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.CycleTeam.sistemacontable.pruebasJG" />
+      <module name="sistemacontable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.CycleTeam.sistemacontable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="com.CycleTeam.sistemacontable in sistemacontable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sistemacontable" />
       <extension name="coverage">
@@ -144,6 +157,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.pruebasJG" />
       <item itemvalue="Application.PruebaClases" />
       <item itemvalue="Application.SistemacontableApplication" />
       <item itemvalue="JUnit.com.CycleTeam.sistemacontable in sistemacontable" />
@@ -151,10 +165,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.SistemacontableApplication" />
+        <item itemvalue="Application.pruebasJG" />
         <item itemvalue="JUnit.com.CycleTeam.sistemacontable in sistemacontable" />
         <item itemvalue="Application.PruebaClases" />
         <item itemvalue="Application.SistemacontableApplication" />
-        <item itemvalue="Application.PruebaClases" />
       </list>
     </recent_temporary>
   </component>

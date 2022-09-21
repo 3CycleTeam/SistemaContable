@@ -14,7 +14,7 @@
                 <div class="col py-3 mx-5 ">
         <main layout:fragment= "contenido" role="main" class="container">
 
-            <form class=th:action="@{agregarEmpleado}" th:object="${nuevoEmpleado}" method="post">
+            <form  th:action="@{/guardarEmpleado}" th:object="${nuevoEmpleado}" method="post">
                 <!--Campo para nombre-->
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre:</label>
@@ -50,7 +50,7 @@
                 <!--Campo para password-->
                 <div class="mb-3">
                     <label for="inputPassword" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="inputPassword">
+                    <input type="password"  th:field="*{contrasena}" class="form-control" id="inputPassword">
                 </div>
 
                 <!--BOTÓN -->
@@ -62,60 +62,10 @@
         </main>
                 </div><!-- Cierre Contenido-->
             </div>
-<<<<<<< HEAD
-=======
+
         </div><!-- Cierre Barra Lateral-->
 
-        <!-- FORMULARIO-->
 
-        <!--Crear formulario para llenar los datos del empleado  -->
-        <div class="col py-3 mx-5">
-        <form class="form control col-md-5" th:action="@{agregarEmpleado}" th:object="${nuevoEmpleado}" method="post">
-            <!--Campo para nombre-->
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="nombre"  th:field="*{nombre}" required="required">
-            </div>
-
-            <!--Campo para correo electrónico-->
-            <div class="mb-3">
-                <label for="inputEmail1" class="form-label">Correo Electrónico</label>
-                <input type="email" th:field="*{correo}" class="form-control"
-                       id="inputEmail1" aria-describedby="iemail">
-            </div>
-
-            <!--Campo para empresa pertenece-->
-            <div class="mb-3">
-                <label for="inputEmpresaP" class="form-label">Empresa:</label>
-            <!--    <input type="text" th:field="*{empresaPertenece}" class="form-control" id="inputEmpresaP" aria-describedby="iEmpresaP"> -->
-
-                <select class="form-select" id="inputEmpresaP"  th:field="*{empresaPertenece}">
-                <option th:each="empresas : ${listaEmpresas}" th:value="${empresas.id}" th:text="${empresas.nombre}"></option>
-            </select>
-            </div>
-
-            <!--Campo para rol-->
-            <div class="mb-3">
-                <label for="inputRol" class="form-label">Rol:</label>
-                <select class="form-select" id="inputRol"  th:field="*{rolEmpleado}">
-                     <option th:each="perfiles : ${listaPerfiles}" th:value="${perfiles.id}" th:text="${perfiles.nombreRol}"></option>
-                 </select>
-             </div>
-
-
-             <!--Campo para password-->
-            <div class="mb-3">
-                <label for="inputPassword" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="inputPassword">
-            </div>
-
-            <!--BOTÓN -->
-            <button type="submit" class="btn btn-primary">Agregar</button>
-
-
-        </form>
->>>>>>> a2c07a07f163589e7a6649e90a519d58f78cfaae
-        </div>
     </div>
 </div>
 

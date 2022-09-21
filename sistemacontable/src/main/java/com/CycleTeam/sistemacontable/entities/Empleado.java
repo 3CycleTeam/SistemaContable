@@ -30,11 +30,12 @@ public class Empleado {
   private String contrasena;
 
   //Constructor 
-  public Empleado(String nombre, String correo, Empresa empresaPertenece, Perfil rolEmpleado) {///pendiente agregar en constructor contrasena
+  public Empleado(String nombre, String correo, Empresa empresaPertenece, Perfil rolEmpleado, String contrasena) {///pendiente agregar en constructor contrasena
         this.nombre = nombre;
         this.correo = correo;
         this.empresaPertenece = empresaPertenece;
         this.rolEmpleado = rolEmpleado;
+        this.contrasena=contrasena;
   }
 }
 

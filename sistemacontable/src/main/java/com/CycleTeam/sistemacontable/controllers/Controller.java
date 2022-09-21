@@ -9,6 +9,7 @@ import com.CycleTeam.sistemacontable.services.EmpresaServicios;
 import com.CycleTeam.sistemacontable.services.MoviDinerService;
 import com.CycleTeam.sistemacontable.services.PerfilService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -97,10 +98,13 @@ public class Controller {
     }
 
     // Agregar empleado
-    @PostMapping("/agregarEmpleado")
-    public String agregarEmpleado(Empleado nuevoEmpleado){
+    @PostMapping("/guardarEmpleado")
+    public String guardarEmpleado(Empleado nuevoEmpleado){
+        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
+        String hashedcont = bCryptPasswordEncoder.encode(nuevoEmpleado.getContrasena());
+        nuevoEmpleado.setContrasena(hashedcont);
         this.empleadoService.guardarOActualizaEmpleado(nuevoEmpleado);
-        return "redirect:/verEmpleados";
+        return "redirect:/Empleados";
     }
 
     @GetMapping("/agregarempleados")

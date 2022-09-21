@@ -14,9 +14,10 @@
         <div class="col py-3 mx-5 ">
 
           <div class="col py-3 mx-5 ">
-            <main layout:fragment= "contenido" role="main" class="container">
-              <h6>Editar Empresa</h6>
-              <form th:action="@{/actualizarEmpresa}" th:object="${emp}" method="post">
+            <h3 class="text text-center mb-4">Editar  empresas</h3>
+            <main layout:fragment= "contenido" role="main" class="container abs-center">
+
+              <form th:action="@{/actualizarEmpresa}" th:object="${emp}" method="post" class="border p-3 form ">
                 <!--Campo para id-->
                 <div class="mb-3">
                   <label for="inputId" class="form-label">Id:</label>

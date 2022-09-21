@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 <head th:replace="layout/header:: header" > </head>
 
@@ -30,7 +30,7 @@
                         <tr th:each="movimientos: ${listaMovimientos}">
                             <td th:text="${movimientos.fecha}"></td>
                             <td th:text="${movimientos.conceptoMovimiento}"></td>
-                            <td th:text="${movimientos.movimientoDinero}"></td>
+                            <td th:text="${#numbers.formatCurrency(movimientos.movimientoDinero)}"></td>
                             <td th:text="${movimientos.empleadoMovimiento.nombre}"></td>
                             <td th:text="${movimientos.empresaMovimiento.nombre}"></td>
 

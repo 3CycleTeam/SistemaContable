@@ -15,7 +15,7 @@ public class MovimientoDinero {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Integer id;
-    private Float movimientoDinero;
+    private int movimientoDinero;
     private String conceptoMovimiento;
     @ManyToOne
     @JoinColumn(name = "empleado_movimiento_id")
@@ -26,7 +26,7 @@ public class MovimientoDinero {
     private Empresa empresaMovimiento;
 
     private LocalDate fecha;
-    public MovimientoDinero(Float movimientoDinero, String conceptoMovimiento, Empleado empleadoMovimiento) {
+    public MovimientoDinero(int movimientoDinero, String conceptoMovimiento, Empleado empleadoMovimiento) {
         this.movimientoDinero = movimientoDinero;
         this.conceptoMovimiento = conceptoMovimiento;
         this.empleadoMovimiento = empleadoMovimiento;

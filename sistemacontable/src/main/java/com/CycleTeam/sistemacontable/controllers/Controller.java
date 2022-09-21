@@ -162,13 +162,19 @@ public class Controller {
     @GetMapping("/editarMovimiento/{id}")
     public String editarMovimiento(Model model, @PathVariable Integer id ){
         MovimientoDinero movimiento = this.movimientosService.buscarMoviDinerbyId(id);
+        List<Empresa> listaEmpresas = this.empresaServicios.getAllEmpresas();
+        List<Empleado> listaEmpleados= this.empleadoService.listarEmpleados();
         model.addAttribute("movimiento",movimiento);
+        model.addAttribute("listaEmpleados",listaEmpleados);
+        model.addAttribute("listaEmpresas",listaEmpresas);
+
         return "editarMovimiento";
     }
 
     //Actualizar Empresa
     @PostMapping("/actualizarMovimiento")
-    public String ActualizarEmpresa(MovimientoDinero movimiento, RedirectAttributes redirectAttributes ) {
+    public String ActualizarEmpresa(MovimientoDinero movimiento) {
+
         this.movimientosService.guardarOActualizarMovimiento(movimiento);
         return "redirect:/verMovimientos";
     }

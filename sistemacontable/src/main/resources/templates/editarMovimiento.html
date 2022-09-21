@@ -32,28 +32,37 @@
                                            aria-describedby="iName">
                                 </div>
 
+                                <div class="mb-3">
+                                    <label for="inputfecha" class="form-label">Fecha:</label>
+                                    <input type="text" th:field="*{fecha}" class="form-control" id="inputfecha" aria-describedby="iDireccion" readonly>
+                                </div>
+
+
                                 <!--Campo para dirección-->
                                 <div class="mb-3">
-                                    <label for="inputDireccion" class="form-label">Monto:</label>
-                                    <input type="text" th:field="*{movimientoDinero}" class="form-control" id="inputDireccion"
+                                    <label for="inputDireccion" class="form-label">Monto $:</label>
+                                    <input type="number" th:field="*{movimientoDinero}" class="form-control" id="inputDireccion"
                                            aria-describedby="iDireccion">
                                 </div>
 
                                 <!--Campo para teléfono-->
                                 <div class=" mb-3">
-                                    <label for="inputTelefono" class="form-label">Usuario:</label>
-                                    <input type="text" th:field="*{empleadoMovimiento.nombre}" class="form-control" id="inputTelefono"
-                                           aria-describedby="inputTelefono">
+                                    <label for="inputUsuario" class="form-label">Usuario:</label>
+                                    <select class="form-select" id="inputUsuario"  th:field="*{empleadoMovimiento}">
+                                        <option th:each="empleados : ${listaEmpleados}" th:value="${empleados.id}" th:text="${empleados.nombre}"></option>
+                                    </select>
+
                                 </div>
 
                                 <!--Campo para Nit-->
                                 <div class="mb-3">
-                                    <label for="inputNit" class="form-label">Empresa:</label>
-                                    <input type="text" th:field="*{empresaMovimiento}" class="form-control" id="inputNit"
-                                           aria-describedby="iNit">
+                                    <label for="inputEmpresaP" class="form-label">Empresa:</label>
+                                    <select class="form-select" id="inputEmpresaP"  th:field="*{empresaMovimiento}">
+                                        <option th:each="empresas : ${listaEmpresas}" th:value="${empresas.id}" th:text="${empresas.nombre}"></option>
+                                    </select>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary">Agregar</button>
+                                <button type="submit" class="btn btn-primary">Editar</button>
                             </form>
 
                         </div>

@@ -11,6 +11,7 @@ import com.CycleTeam.sistemacontable.services.PerfilService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelExtensionsKt;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -143,14 +144,36 @@ public class Controller {
         return "verEmpleados";
     }
 
+    //Editar Empleado
+    @GetMapping("/editarEmpleado/{id}")
+    public String editarEmpleado(Model model, @PathVariable Integer id ){
+        Optional<Empleado> empleado = this.empleadoService.getEmpleadoById(id);
+        List<Empresa> listaEmpresas= this.empresaServicios.getAllEmpresas();
+        List<Perfil> listaPerfiles=this.perfilService.getPerfiles();
+        model.addAttribute("empleado",empleado);
+        model.addAttribute("listaPerfiles",listaPerfiles);
+        model.addAttribute("listaEmpresas",listaEmpresas);
+        return "editUsers";
+    }
 
+    @PostMapping("/actualizarEmpleado")
+    public String ActualizarEmpleado(Empleado empleado, RedirectAttributes redirectAttributes ) {
+        this.empleadoService.guardarOActualizaEmpleado(empleado);
+        return "redirect:/Empleados";
+    }
 
     // *****INICIO CONTROLLER MOVIMIENTO DINERO*****
 
 
     //Agregar Movimiento de Dinero
     @GetMapping("/agregarmovimientos")
-    public String agregarMovimientos(){
+    public String agregarMovimientos(Model model){
+        MovimientoDinero movimiento= new MovimientoDinero();
+        List<Empresa> listaEmpresas = this.empresaServicios.getAllEmpresas();
+        List<Empleado> listaEmpleados= this.empleadoService.listarEmpleados();
+        model.addAttribute("movimiento",movimiento);
+        model.addAttribute("listaEmpleados",listaEmpleados);
+        model.addAttribute("listaEmpresas",listaEmpresas);
         return "addMoves";
     }
 
@@ -160,6 +183,22 @@ public class Controller {
         model.addAttribute("listaMovimientos",listaMovimientos);
         return"verMovimientos";
     }
+
+    @GetMapping("movimientos/empresa/{id}")
+    public String movimientosEmpresa(Model model, @PathVariable int id)
+    {
+        List<MovimientoDinero> listaMovimientos = this.movimientosService.buscarMoviDinerbyEmpresa(id);
+        model.addAttribute("listaMovimientos",listaMovimientos);
+        long suma = 0;
+        for (int i = 0; i <listaMovimientos.size() ; i++) {
+            suma=suma+listaMovimientos.get(i).getMovimientoDinero();
+        }
+        model.addAttribute("sumamovimientos",suma);
+        return"verMovimientos";
+
+    }
+
+
 
     //////////////////////////////////////////////////////////////////////////////
     @GetMapping("/editarMovimiento/{id}")
@@ -174,7 +213,7 @@ public class Controller {
         return "editarMovimiento";
     }
 
-    //Actualizar Empresa
+    //Actualizar Movimiento
     @PostMapping("/actualizarMovimiento")
     public String ActualizarEmpresa(MovimientoDinero movimiento) {
 

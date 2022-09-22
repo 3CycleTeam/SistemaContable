@@ -185,6 +185,20 @@ public class Controller {
         return"verMovimientos";
     }
 
+    @GetMapping("movimientos/empresa/{id}")
+    public String movimientosEmpresa(Model model, @PathVariable int id)
+    {
+        List<MovimientoDinero> listaMovimientos = this.movimientosService.buscarMoviDinerbyEmpresa(id);
+        model.addAttribute("listaMovimientos",listaMovimientos);
+        long suma = 0;
+        for (int i = 0; i <listaMovimientos.size() ; i++) {
+            suma=suma+listaMovimientos.get(i).getMovimientoDinero();
+        }
+        model.addAttribute("sumamovimientos",suma);
+        return"verMovimientos";
+
+    }
+
 
 
     //////////////////////////////////////////////////////////////////////////////

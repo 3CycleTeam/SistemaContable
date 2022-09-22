@@ -144,7 +144,23 @@ public class Controller {
         return "verEmpleados";
     }
 
+    //Editar Empleado
+    @GetMapping("/editarEmpleado/{id}")
+    public String editarEmpleado(Model model, @PathVariable Integer id ){
+        Optional<Empleado> empleado = this.empleadoService.getEmpleadoById(id);
+        List<Empresa> listaEmpresas= this.empresaServicios.getAllEmpresas();
+        List<Perfil> listaPerfiles=this.perfilService.getPerfiles();
+        model.addAttribute("empleado",empleado);
+        model.addAttribute("listaPerfiles",listaPerfiles);
+        model.addAttribute("listaEmpresas",listaEmpresas);
+        return "editUsers";
+    }
 
+    @PostMapping("/actualizarEmpleado")
+    public String ActualizarEmpleado(Empleado empleado, RedirectAttributes redirectAttributes ) {
+        this.empleadoService.guardarOActualizaEmpleado(empleado);
+        return "redirect:/Empleados";
+    }
 
     // *****INICIO CONTROLLER MOVIMIENTO DINERO*****
 

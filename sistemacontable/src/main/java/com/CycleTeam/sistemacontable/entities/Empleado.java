@@ -37,6 +37,8 @@ public class Empleado {
         this.rolEmpleado = rolEmpleado;
         this.contrasena=contrasena;
   }
+
+
 }
 
 // By: 3CycleTeam

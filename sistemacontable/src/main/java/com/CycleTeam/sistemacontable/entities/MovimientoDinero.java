@@ -4,9 +4,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.time.LocalDate;
 
-@NoArgsConstructor
+
 @Setter
 @Getter
 @Entity
@@ -25,10 +26,15 @@ public class MovimientoDinero {
     @JoinColumn(name = "empresa_movimiento_id")
     private Empresa empresaMovimiento;
 
-    private LocalDate fecha;
+    private Timestamp fecha;
     public MovimientoDinero(int movimientoDinero, String conceptoMovimiento, Empleado empleadoMovimiento) {
         this.movimientoDinero = movimientoDinero;
         this.conceptoMovimiento = conceptoMovimiento;
         this.empleadoMovimiento = empleadoMovimiento;
+        this.fecha= new Timestamp(System.currentTimeMillis());
+
+    }
+    public MovimientoDinero(){
+        this.fecha= new Timestamp(System.currentTimeMillis());
     }
 }

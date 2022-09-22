@@ -11,6 +11,7 @@ import com.CycleTeam.sistemacontable.services.PerfilService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelExtensionsKt;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -167,7 +168,13 @@ public class Controller {
 
     //Agregar Movimiento de Dinero
     @GetMapping("/agregarmovimientos")
-    public String agregarMovimientos(){
+    public String agregarMovimientos(Model model){
+        MovimientoDinero movimiento= new MovimientoDinero();
+        List<Empresa> listaEmpresas = this.empresaServicios.getAllEmpresas();
+        List<Empleado> listaEmpleados= this.empleadoService.listarEmpleados();
+        model.addAttribute("movimiento",movimiento);
+        model.addAttribute("listaEmpleados",listaEmpleados);
+        model.addAttribute("listaEmpresas",listaEmpresas);
         return "addMoves";
     }
 
@@ -177,6 +184,8 @@ public class Controller {
         model.addAttribute("listaMovimientos",listaMovimientos);
         return"verMovimientos";
     }
+
+
 
     //////////////////////////////////////////////////////////////////////////////
     @GetMapping("/editarMovimiento/{id}")
@@ -191,7 +200,7 @@ public class Controller {
         return "editarMovimiento";
     }
 
-    //Actualizar Empresa
+    //Actualizar Movimiento
     @PostMapping("/actualizarMovimiento")
     public String ActualizarEmpresa(MovimientoDinero movimiento) {
 

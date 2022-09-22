@@ -20,23 +20,12 @@
             <div class="col py-3 mx-5">
               <form th:action="@{/actualizarMovimiento}" th:object="${movimiento}" method="post">
                 <!--Campo para id-->
-                <div class="mb-3">
-                  <label for="inputId" class="form-label">Id:</label>
-                  <input type="text" th:field="*{id}" class="form-control" id="inputId" data-type="currency
-                         aria-describedby="iId" readonly>
-                </div>
-                <!--Campo para nombre-->
+                               <!--Campo para nombre-->
                 <div class="mb-3">
                   <label for="inputName" class="form-label">Concepto:</label>
                   <input type="text" th:field="*{conceptoMovimiento}" class="form-control" id="inputName"
                          aria-describedby="iName">
                 </div>
-
-                <div class="mb-3">
-                  <label for="inputfecha" class="form-label">Fecha:</label>
-                  <input type="text" th:field="*{fecha}" class="form-control" id="inputfecha" aria-describedby="iDireccion" readonly>
-                </div>
-
 
                 <!--Campo para dirección-->
                 <div class="mb-3">
@@ -53,6 +42,9 @@
                   </select>
 
                 </div>
+
+
+
 
                 <!--Campo para Nit-->
                 <div class="mb-3">

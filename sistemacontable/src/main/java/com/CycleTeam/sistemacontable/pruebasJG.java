@@ -3,6 +3,9 @@ package com.CycleTeam.sistemacontable;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import java.sql.Timestamp;
+import java.util.Date;
+
 public class pruebasJG {
     public static void main(String[] args) {
 
@@ -14,6 +17,10 @@ public class pruebasJG {
 
         boolean validar = bCryptPasswordEncoder.matches("654321", hashedPass1);
         System.out.println(validar);
+        Date date = new Date();
+        Timestamp timestamp = new Timestamp(date.getTime());
+
+        System.out.println(timestamp);
 
 
     }

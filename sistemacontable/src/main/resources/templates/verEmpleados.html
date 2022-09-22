@@ -39,22 +39,22 @@
                                 <!-- The Modal -->
                                 <div class="modal" th:id="|myModal${empleados.id}|">
                                     <div class="modal-dialog">
-                                        <div class="modal-content">
+                                        <div class="modal-content  bg-light text-black">
 
                                             <!-- Modal Header -->
                                             <div class="modal-header">
-                                                <h4 class="modal-title">Eliminar Empleado</h4>
+                                                <h4 class="modal-title justify-content-center align-items-center ">Eliminar empleado</h4>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                             </div>
 
                                             <!-- Modal body -->
-                                            <div class="modal-body">
-                                                Estas Seguro
+                                            <div class="modal-body hs-3">
+                                                ¿Estas Seguro?
                                             </div>
 
                                             <!-- Modal footer -->
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary "><a class="text-white text-decoration-none" th:href="@{/eliminarEmpleado/{id}(id=${empleados.id})}">Eliminar</a></button>
+                                                <button type="button" class="btn btn-outline-danger "><a class="text-black" th:href="@{/eliminarEmpleado/{id}(id=${empleados.id})}">Eliminar</a></button>
                                             </div>
 
                                         </div>

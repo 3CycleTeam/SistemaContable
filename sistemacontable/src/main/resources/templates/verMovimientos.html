@@ -47,10 +47,23 @@
                             </tbody>
                         </table>
 
-                        <div>
-                            <h5></h5>A continuación se muestra el total de los movimientos:
-                            <h3>Total <span class="badge bg-danger" th:text="${#numbers.formatCurrency(sumamovimientos)}"></span></h3>
+
+                        <div th:if="${mensaje != null}" th:text="${mensaje}">
+
                         </div>
+
+                        <div th:if="${sumamovimientos != null}">
+
+                                <h5></h5>A continuación se muestra el total de los movimientos:
+                                <h3>Total <span class="badge bg-danger" th:text=" ${#numbers.formatCurrency(sumamovimientos)}"></span></h3>
+
+
+                        </div>
+                        <!-- ELSE -->
+                        <div th:unless="${sumamovimientos == null}">
+                            <div th:text=" 'ok' }">Hi, User</div>
+                        </div>
+
 
 
 

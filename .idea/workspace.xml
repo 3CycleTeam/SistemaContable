@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0d8507a4-716f-4c88-9db1-d335777e21bd" name="Changes" comment="Se crea Templates agregar movimiento dinero, empresa y empleado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/login.html" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/layout/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/layout/header.html" afterDir="false" />
+>>>>>>> cf26d4d89611e4229971fbff1c3b74ae1b517ad8
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

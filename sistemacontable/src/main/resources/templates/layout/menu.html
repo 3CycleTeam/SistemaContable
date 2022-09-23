@@ -29,10 +29,10 @@
                             <i class="fs-4 bi-building"></i> <span class="ms-1 d-none d-sm-inline">Empresas</span></a>
                         <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                             <li class="w-100">
-                                <a href="/mostrarempresas" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary"></span>Listar Empresas</a>
+                                <a th:href="@{/empresas/mostrar}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Ver </span>empresas</a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary ">Item</span> 2</a>
+                                <a th:href="@{/agregarempresas}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Crear </span>empresas</a>
                             </li>
                         </ul>
                     </li>

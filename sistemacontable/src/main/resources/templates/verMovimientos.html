@@ -11,11 +11,11 @@
         <div class="row flex-nowrap">
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light "><!--Abre Barra Lateral-->
                 <nav th:replace="layout/menu :: menu"></nav>
+
                 <div class="col py-3 mx-5 ">
+                    <h3 class="text text-center mb-4">Ver todos los movimientos de las empresas</h3>
                     <main layout:fragment="contenido" role="main" class="container">
 
-                        <h3 class="text text-center mb-4">Lista de Movimientos</h3>
-                        <h5>Responsive</h5> shrinks in width, hides text labels and collapses to icons only on mobile
                         <table class="table container table-hover table-striped text-center">
                             <thead>
                             <th>Fecha</th>
@@ -73,6 +73,39 @@
         </div>
     </div>
 </div>
+
+
+<div th:if="${mensaje != null}" th:text="${mensaje}">
+
+</div>
+
+<div th:if="${sumamovimientos != null}">
+
+    <h5></h5>A continuación se muestra el total de los movimientos:
+    <h3>Total <span class="badge bg-danger" th:text=" ${#numbers.formatCurrency(sumamovimientos)}"></span></h3>
+
+
+</div>
+<!-- ELSE -->
+<div th:unless="${sumamovimientos == null}">
+    <div th:text=" 'ok' }">Hi, User</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

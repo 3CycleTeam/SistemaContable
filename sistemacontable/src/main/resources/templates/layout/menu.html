@@ -2,7 +2,7 @@
 
 
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-primary min-vh-100">
-                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-decoration-none">
                     <span class="fs-5 d-none d-sm-inline">Menu</span>
                 </a>
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start " id="menu">
@@ -13,14 +13,14 @@
                     </li>
                     <li>
                         <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-primary">
-                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Usuarios</span>
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Empleados</span>
                         </a>
                         <ul class="collapse  nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                             <li class="w-100">
-                                <a th:href="@{/agregarempleados}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Item</span> 1 </a>
+                                <a th:href="@{/agregarempleados}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Crear </span>empleados</a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Item</span> 2 </a>
+                                <a th:href="@{/Empleados}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Ver </span> empleados </a>
                             </li>
                         </ul>
                     </li>
@@ -29,10 +29,10 @@
                             <i class="fs-4 bi-building"></i> <span class="ms-1 d-none d-sm-inline">Empresas</span></a>
                         <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                             <li class="w-100">
-                                <a href="/mostrarempresas" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary"></span>Listar Empresas</a>
+                                <a th:href="@{/empresas/mostrar}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Ver </span>empresas</a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary ">Item</span> 2</a>
+                                <a th:href="@{/agregarempresas}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Crear </span>empresas</a>
                             </li>
                         </ul>
                     </li>
@@ -41,17 +41,15 @@
                             <i class="fs-4 bi-cash"></i> <span class="ms-1 d-none d-sm-inline">Movimientos de dinero</span> </a>
                         <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                             <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Product</span> 1</a>
+                                <a th:href="@{/agregarmovimientos}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Crear un </span>movimiento</a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Product</span> 2</a>
+                                <a th:href="@{/verMovimientos}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Ver los </span>movimientos</a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary ">Product</span> 3</a>
+                                <a th:href="@{/verMovimientos}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Ver movimientos </span>por empresa</a>
                             </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Product</span> 4</a>
-                            </li>
+
                         </ul>
                     </li>
 

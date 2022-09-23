@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d8507a4-716f-4c88-9db1-d335777e21bd" name="Changes" comment="Se crea Templates agregar movimiento dinero, empresa y empleado">
-      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addEnterprises.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addEnterprises.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addUsers.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/addUsers.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/editUsers.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/editUsers.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/layout/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/layout/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/verEmpleados.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/verEmpleados.html" afterDir="false" />
-
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

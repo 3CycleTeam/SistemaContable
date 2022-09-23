@@ -15,9 +15,10 @@
                     <main layout:fragment= "contenido" role="main" class="container">
                         <h3 class="text text-center mb-4">Modificar empleado</h3>
 
-                        <form  th:action="@{/guardarEmpleado}" th:object="${empleado}" method="post">
+                        <form  th:action="@{/guardarEmpleado}" th:object="${empleado}" method="post" class="border p-3 form">
 
                             <!--Campo para nombre-->
+
                             <div class="mb-3">
                                 <label for="idempleado" class="form-label">Id:</label>
                                 <input type="text" class="form-control" id="idempleado"  th:field="*{id}" required="required" readonly>

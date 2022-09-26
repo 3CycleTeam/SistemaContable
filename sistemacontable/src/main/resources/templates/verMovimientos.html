@@ -47,10 +47,23 @@
                             </tbody>
                         </table>
 
-                        <div>
-                            <h5></h5>A continuación se muestra el total de los movimientos:
-                            <h3>Total <span class="badge bg-danger" th:text="${#numbers.formatCurrency(sumamovimientos)}"></span></h3>
+
+                        <div th:if="${mensaje != null}" th:text="${mensaje}">
+
                         </div>
+
+                        <div th:if="${sumamovimientos != null}">
+
+                            <h5class="text-right">A continuación se muestra el total de los movimientos:</h5>
+                            <h3 class="text-right">Total <span class="badge bg-danger" th:text=" ${#numbers.formatCurrency(sumamovimientos)}"></span></h3>
+
+
+                        </div>
+                        <!-- ELSE -->
+                        <div th:unless="${sumamovimientos == null}">
+
+                        </div>
+
 
 
 
@@ -60,39 +73,6 @@
         </div>
     </div>
 </div>
-
-
-<div th:if="${mensaje != null}" th:text="${mensaje}">
-
-</div>
-
-<div th:if="${sumamovimientos != null}">
-
-    <h5></h5>A continuación se muestra el total de los movimientos:
-    <h3>Total <span class="badge bg-danger" th:text=" ${#numbers.formatCurrency(sumamovimientos)}"></span></h3>
-
-
-</div>
-<!-- ELSE -->
-<div th:unless="${sumamovimientos == null}">
-    <div th:text=" 'ok' }">Hi, User</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

@@ -21,6 +21,7 @@ public class SecurityConfig {
                 .dataSource(dataSource)
                 .usersByUsernameQuery("select correo,contrasena,estado from empleados where correo=?")
                 .authoritiesByUsernameQuery("select correo, rol_empleado_id from empleados where correo=?");
+
     }
 
 

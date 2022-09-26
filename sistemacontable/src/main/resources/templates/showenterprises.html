@@ -26,6 +26,7 @@
                                 <th>Direccion</th>
                                 <th>Telefono</th>
                                 <th>Nit</th>
+                                <th>Ver Movimientos</th>
                                 <th> Editar</th>
                                 <th> Eliminar</th>
                                 </thead>
@@ -37,6 +38,11 @@
                                     <td th:text="${empresas.direccion}"></td>
                                     <td th:text="${empresas.telefono}"></td>
                                     <td th:text="${empresas.nit}"></td>
+                                    <td>  <button type="button" class="btn btn-primary "><a class="text-white text-decoration-none" th:href="@{/movimientos/empresa/{id}(id=${empresas.id})}"><i class="bi bi-receipt"></i></a></button></td>
+
+
+
+
                                     <td>  <button type="button" class="btn btn-primary "><a class="text-white text-decoration-none" th:href="@{/editarEmpresa/{id}(id=${empresas.id})}"><i class="bi bi-pencil-square"></i></a></button></td>
                                     <!-- <td>  <button type="button" class="btn btn-primary "><a class="text-white text-decoration-none" th:href="@{/eliminarEmpresa/{id}(id=${empresas.id})}"><i class="fa fa-trash"></i></a></button></td> -->
                                     <td>
@@ -69,13 +75,7 @@
                                         </div>
 
                                     </td>
-
                                     <!-- Inicio modal  -->
-
-
-
-
-
 
                                 </tr>
 

@@ -2,6 +2,10 @@
 
 
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-primary min-vh-100">
+
+                <div sec:authorize="isAuthenticated()" class="mb-3">
+                    Estas logueado como <span sec:authentication="name"></span></div>
+
                 <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-decoration-none">
                     <span class="fs-5 d-none d-sm-inline">Menu</span>
                 </a>
@@ -47,7 +51,7 @@
                                 <a th:href="@{/verMovimientos}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Ver los </span>movimientos</a>
                             </li>
                             <li>
-                                <a th:href="@{/verMovimientos}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Ver movimientos </span>por empresa</a>
+                                <a th:href="@{/movimientos/empresas/{correo}(correo=${empleado.correo})}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Ver movimientos </span>de mi empresa</a>
                             </li>
 
                         </ul>

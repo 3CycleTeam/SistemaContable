@@ -9,6 +9,7 @@ import com.CycleTeam.sistemacontable.services.EmpresaServicios;
 import com.CycleTeam.sistemacontable.services.MoviDinerService;
 import com.CycleTeam.sistemacontable.services.PerfilService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.parameters.P;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelExtensionsKt;
@@ -257,6 +258,20 @@ public class Controller {
     }
 
 
+    @GetMapping("/movimientos/empresas/{correo}")
+        public String movimientoscorreo(@PathVariable String correo, Model model ){
+        Empleado empleado = this.empleadoService.empleadoBycorreo(correo);
+        int id=empleado.getEmpresaPertenece().getId();
+        List<MovimientoDinero> listaMovimientos = this.movimientosService.buscarMoviDinerbyEmpresa(id);
+        model.addAttribute("listaMovimientos",listaMovimientos);
+        model.addAttribute("empleado",empleado);
+        long suma = 0;
+        for (int i = 0; i <listaMovimientos.size() ; i++) {
+            suma=suma+listaMovimientos.get(i).getMovimientoDinero();
+        }
+        model.addAttribute("sumamovimientos",suma);
+        return"verMovimientos";
+        }
 
 }
 

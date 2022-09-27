@@ -42,6 +42,10 @@ EmpleadoRepository empleadoRepository;
         return this.empleadoRepository.findEmpleadoByempresaPertenece(empresa);
     }
 
+    public Empleado empleadoBycorreo(String correo){
+        return  this.empleadoRepository.findEmpleadoBycorreo(correo);
+    }
+
     }
 
 

@@ -11,4 +11,6 @@ import java.util.List;
 public interface EmpresaRepository extends JpaRepository <Empresa, Integer> {
 
 
+
+
 }

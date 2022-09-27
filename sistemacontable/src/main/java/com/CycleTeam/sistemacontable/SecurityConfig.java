@@ -39,7 +39,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/Empresa/**").hasRole("ADMIN")
                 .antMatchers("/Empleados/**").hasRole("ADMIN")
                 .antMatchers("/verMovimientos/**").hasAnyRole("ADMIN","USER")
-                .antMatchers("/").hasAnyRole("ADMIN","USER")
+                .antMatchers("/","/movimientos/empleados/{correo}/**").hasAnyRole("ADMIN","USER")
                 .antMatchers("/agregarmovimientos/**").hasAnyRole("ADMIN","USER")
                 .antMatchers("/editarMovimiento/{id}").hasAnyRole("ADMIN","USER")
                 .and().formLogin().successHandler(customSuccessHandler)

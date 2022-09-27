@@ -19,10 +19,10 @@ public class Perfil {
     private int id;
 
     private String  nombreRol;
-    private Date fechaCreado;
-    private Date fechaActualizado;
+    private String fechaCreado;
+    private String fechaActualizado;
 
-    public Perfil(String nombreRol, Date fechaCreado, Date fechaActualizado) {
+    public Perfil(String nombreRol, String fechaCreado, String fechaActualizado) {
         this.nombreRol = nombreRol;
         this.fechaCreado = fechaCreado;
         this.fechaActualizado = fechaActualizado;

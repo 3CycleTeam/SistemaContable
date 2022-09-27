@@ -14,63 +14,63 @@
                 <div class="col py-3 mx-5 ">
                     <main layout:fragment= "contenido" role="main" class="container">
 
-                    <h3 class="text text-center mb-4">Lista de empleados</h3>
+                        <h3 class="text text-center mb-4">Lista de empleados</h3>
                         <table class="table container table-hover table-striped text-center">
-                        <thead>
+                            <thead>
                             <th>Nombre</th>
                             <th>Correo</th>
                             <th>Empresa a la que pertenece</th>
                             <th>Rol</th>
                             <th> Editar</th>
                             <th> Eliminar</th>
-                        </thead>
-                        <tbody>
-                        </tr>
-                        <tr th:each="empleados: ${listarEmpleados}">
-                            <td th:text="${empleados.nombre}"></td>
-                            <td th:text="${empleados.correo}"></td>
-                            <td th:text="${empleados.empresaPertenece.nombre}"></td>
-                            <td th:text="${empleados.rolEmpleado.nombreRol}"></td>
+                            </thead>
+                            <tbody>
+                            </tr>
+                            <tr th:each="empleados: ${listarEmpleados}">
+                                <td th:text="${empleados.nombre}"></td>
+                                <td th:text="${empleados.correo}"></td>
+                                <td th:text="${empleados.empresaPertenece.nombre}"></td>
+                                <td th:text="${empleados.rolEmpleado.nombreRol}"></td>
 
-                            <td>  <button type="button" class="btn btn-primary "><a class="text-white text-decoration-none" th:href="@{/editarEmpleado/{id}(id=${empleados.id})}"><i class="bi bi-pencil-square"></i></a></button></td>
-                            <td>
-                                <!-- Button to Open the Modal -->
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" th:data-bs-target="|#myModal${empleados.id}|"><i class="bi bi-trash"></i></button>
-                                <!-- The Modal -->
-                                <div class="modal" th:id="|myModal${empleados.id}|">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content  bg-light text-black">
+                                <td>  <button type="button" class="btn btn-primary "><a class="text-white text-decoration-none" th:href="@{/editarEmpleado/{id}(id=${empleados.id})}"><i class="bi bi-pencil-square"></i></a></button></td>
+                                <td>
+                                    <!-- Button to Open the Modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" th:data-bs-target="|#myModal${empleados.id}|"><i class="bi bi-trash"></i></button>
+                                    <!-- The Modal -->
+                                    <div class="modal" th:id="|myModal${empleados.id}|">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content  bg-light text-black">
 
-                                            <!-- Modal Header -->
-                                            <div class="modal-header">
-                                                <h4 class="modal-title justify-content-center align-items-center ">Eliminar empleado</h4>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title justify-content-center align-items-center ">Eliminar empleado</h4>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                </div>
+
+                                                <!-- Modal body -->
+                                                <div class="modal-body hs-3">
+                                                    ¿Estas Seguro?
+                                                </div>
+
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-outline-danger "><a class="text-black" th:href="@{/eliminarEmpleado/{id}(id=${empleados.id})}">Eliminar</a></button>
+                                                </div>
+
                                             </div>
-
-                                            <!-- Modal body -->
-                                            <div class="modal-body hs-3">
-                                                ¿Estas Seguro?
-                                            </div>
-
-                                            <!-- Modal footer -->
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-outline-danger "><a class="text-black" th:href="@{/eliminarEmpleado/{id}(id=${empleados.id})}">Eliminar</a></button>
-                                            </div>
-
                                         </div>
                                     </div>
-                                </div>
 
-                            </td>
+                                </td>
 
-                        </tr>
+                            </tr>
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
 
                     </main>
                 </div>
-        </div><!-- Cierre Contenido-->
+            </div><!-- Cierre Contenido-->
         </div>
     </div>
 </div>

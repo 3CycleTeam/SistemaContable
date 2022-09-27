@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d8507a4-716f-4c88-9db1-d335777e21bd" name="Changes" comment="Se crea Templates agregar movimiento dinero, empresa y empleado">
+      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/handler/CustomSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/accesoDenegado.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/layout/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/layout/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SistemacontableApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/SistemacontableApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/PerfilRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/controllers/PerfilRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Perfil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/entities/Perfil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/pruebasJG.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/java/com/CycleTeam/sistemacontable/pruebasJG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/verEmpleados.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/verEmpleados.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/verMovimientos.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistemacontable/src/main/resources/templates/verMovimientos.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +54,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -77,7 +89,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Documents/GitHub/SistemaContable/sistemacontable/src/main/resources/templates&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/01MisionTic2022/Ciclo3/SistemaGestionDeProyectos/ProyectoGit/SistemaContable/sistemacontable/src/main/resources/templates&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -86,11 +98,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\01MisionTic2022\Ciclo3\SistemaGestionDeProyectos\ProyectoGit\SistemaContable\sistemacontable\src\main\resources\templates" />
       <recent name="C:\Users\PC\Documents\GitHub\SistemaContable\sistemacontable\src\main\resources\templates" />
       <recent name="C:\Users\intellij\Desktop\ADC - 3CycleTeam\SistemaContable\sistemacontable\src\main\resources\templates" />
       <recent name="D:\MINTIC\SistemaContable\sistemacontable\src\main\resources\templates" />
       <recent name="D:\Mintic\SistemaContable\sistemacontable\src\main\resources\templates\images" />
-      <recent name="D:\Mintic\SistemaContable\sistemacontable\src\main\resources\templates\fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\MINTIC\SistemaContable\sistemacontable\src\main\resources\templates\layout" />

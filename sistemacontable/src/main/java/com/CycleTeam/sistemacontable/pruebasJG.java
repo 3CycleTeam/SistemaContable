@@ -1,8 +1,11 @@
 package com.CycleTeam.sistemacontable;
 
 
+import com.CycleTeam.sistemacontable.entities.Empleado;
+import com.CycleTeam.sistemacontable.entities.Perfil;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import java.sql.SQLOutput;
 import java.sql.Timestamp;
 import java.util.Date;
 
@@ -21,6 +24,10 @@ public class pruebasJG {
         Timestamp timestamp = new Timestamp(date.getTime());
 
         System.out.println(timestamp);
+        Perfil perfil= new Perfil("Administrador","HOY","MAÑANA");
+        Empleado empleado= new Empleado();
+        empleado.setRolEmpleado(perfil);
+        System.out.println(empleado.getRol_empleado());
 
 
     }

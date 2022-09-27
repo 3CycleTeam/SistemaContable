@@ -15,6 +15,8 @@
                 <div class="col py-3 mx-5 ">
                     <h3 class="text text-center mb-4">Ver todos los movimientos de las empresas</h3>
                     <main layout:fragment="contenido" role="main" class="container">
+                        <p th:inline="text" class="text-right">User: [[${#httpServletRequest.remoteUser}]]</p>
+                        <button type="button" class="btn btn-danger" style="float:right"><a th:href="@{/logout}">Cerrar Sesión</a></button>
 
                         <table class="table container table-hover table-striped text-center">
                             <thead>

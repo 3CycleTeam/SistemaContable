@@ -15,6 +15,7 @@ import org.springframework.ui.ModelExtensionsKt;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
@@ -32,6 +33,11 @@ public class Controller {
     PerfilService perfilService;
     @Autowired
     MoviDinerService movimientosService;
+
+
+
+
+
 
     // *****INICIO CONTROLLER EMPRESA*****
 
@@ -221,6 +227,35 @@ public class Controller {
         return "redirect:/verMovimientos";
     }
     //////////////////////////////////////////////////////////////////////////////
+    //Mostrar perfil
+    @GetMapping("/verperfil")
+
+    public String mostrarperfiles( Model model ) {
+        List<Perfil> listaperfiles = this.perfilService.getPerfiles();
+        model.addAttribute("listaperfiles",listaperfiles);
+        return "verperfil";
+    }
+
+    //Agregar perfil
+    @GetMapping("/agregarperfiles")
+    public String agregarPerfiles(Model model){
+        Perfil perfil= new Perfil();
+        model.addAttribute("perfil",perfil);
+        return "agregarPerfiles";
+    }
+
+    //Guardar perfil
+    @PostMapping("/guardarperfil")
+    public String guardarPerfil(Perfil perfil, RedirectAttributes redirectAttributes ){
+        this.perfilService.actualizarPerfil(perfil);
+        return "redirect:/verperfiles";
+    }
+//Controlador que me lleva al template de No autorizado
+    @RequestMapping(value="/Denegado")
+    public String accesoDenegado(){
+        return "accesoDenegado";
+    }
+
 
 
 }

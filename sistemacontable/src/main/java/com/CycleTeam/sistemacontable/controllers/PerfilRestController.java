@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Date;
 import java.util.List;
 
-@RestController
+//@RestController
 public class PerfilRestController {
     @Autowired
     PerfilService perfilService;
@@ -28,7 +28,7 @@ public class PerfilRestController {
     public Perfil actulizarperfil(@RequestBody Perfil nuevoPerfil, @PathVariable Integer id){
         Perfil perfilActual= this.perfilService.buscarPerfilbyId(id);
         perfilActual.setNombreRol(nuevoPerfil.getNombreRol());
-        perfilActual.setFechaActualizado(new Date());
+        perfilActual.setFechaActualizado(nuevoPerfil.getFechaActualizado());
         return  this.perfilService.actualizarPerfil(perfilActual);
 
     }

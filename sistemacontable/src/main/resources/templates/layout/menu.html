@@ -3,8 +3,7 @@
 
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-primary min-vh-100">
 
-                <div sec:authorize="isAuthenticated()" class="mb-3">
-                    Estas logueado como <span sec:authentication="name"></span></div>
+
 
                 <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-decoration-none">
                     <span class="fs-5 d-none d-sm-inline">Menu</span>
@@ -63,25 +62,35 @@
                 <div class="dropdown pb-4">
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle text-primary"
                        id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30"
+                        <img src="https://bit.ly/3UKE0Kg" alt="hugenerd" width="50" height="50"
                              class="rounded-circle">
+
+
+                        <div sec:authorize="isAuthenticated()" class="mb-3 text-primary">
                         <span sec:authentication="name" class="d-none d-sm-inline mx-1 text-primary"></span>
 
                         <span class="d-none d-sm-inline mx-1">
-                            <img src="@{/images/logo.png}"  alt="3CycleLogo" style="width:100px;" class="rounded-pill">
+
 
                         </span>
+
+                        </div>
+
+
                     </a>
 
                     <ul class="dropdown-menu text-small shadow " aria-labelledby="dropdownUser1">
                                         <li><a class="dropdown-item text-primary"  th:href="@{/logout}">Cerrar Sesión</a></li>
                     </ul>
                 </div>
-            </div></div>
 
+            </div>
 
+    </div>
 
 
 
 
 </nav>
+
+

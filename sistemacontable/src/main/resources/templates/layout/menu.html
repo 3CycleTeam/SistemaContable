@@ -51,7 +51,7 @@
                                 <a th:href="@{/verMovimientos}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Ver los </span>movimientos</a>
                             </li>
                             <li>
-                                <a th:href="@{/movimientos/empresas/{correo}(correo=${empleado.correo})}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Ver movimientos </span>de mi empresa</a>
+                                <a th:href="@{/movimientos/empresas/{correo}(correo=${#httpServletRequest.remoteUser})}" class="nav-link px-0"> <span class="d-none d-sm-inline text-primary">Ver movimientos </span>de mi empresa</a>
                             </li>
 
                         </ul>

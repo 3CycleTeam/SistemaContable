@@ -46,10 +46,7 @@
 		</dependency>
 
 		<!-- DEPENDENDCIAS DE AUTENTICACIÓN DE AUTH0 -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-oauth2-client</artifactId>
-		</dependency>
+
 		<dependency>
 			<groupId>org.thymeleaf.extras</groupId>
 			<artifactId>thymeleaf-extras-springsecurity5</artifactId>

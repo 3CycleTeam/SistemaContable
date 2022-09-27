@@ -15,8 +15,6 @@
                 <div class="col py-3 mx-5 ">
                     <h3 class="text text-center mb-4">Ver todos los movimientos de las empresas</h3>
                     <main layout:fragment="contenido" role="main" class="container">
-                        <p th:inline="text" class="text-right">User: [[${#httpServletRequest.remoteUser}]]</p>
-                        <button type="button" class="btn btn-danger" style="float:right"><a th:href="@{/logout}">Cerrar Sesión</a></button>
 
                         <table class="table container table-hover table-striped text-center">
                             <thead>
@@ -56,14 +54,14 @@
 
                         <div th:if="${sumamovimientos != null}">
 
-                                <h5></h5>A continuación se muestra el total de los movimientos:
-                                <h3>Total <span class="badge bg-danger" th:text=" ${#numbers.formatCurrency(sumamovimientos)}"></span></h3>
+                            <h5class="text-right">A continuación se muestra el total de los movimientos:</h5>
+                            <h3 class="text-right">Total <span class="badge bg-danger" th:text=" ${#numbers.formatCurrency(sumamovimientos)}"></span></h3>
 
 
                         </div>
                         <!-- ELSE -->
                         <div th:unless="${sumamovimientos == null}">
-                            <div th:text=" 'ok' }">Hi, User</div>
+
                         </div>
 
 
@@ -75,39 +73,6 @@
         </div>
     </div>
 </div>
-
-
-<div th:if="${mensaje != null}" th:text="${mensaje}">
-
-</div>
-
-<div th:if="${sumamovimientos != null}">
-
-    <h5></h5>A continuación se muestra el total de los movimientos:
-    <h3>Total <span class="badge bg-danger" th:text=" ${#numbers.formatCurrency(sumamovimientos)}"></span></h3>
-
-
-</div>
-<!-- ELSE -->
-<div th:unless="${sumamovimientos == null}">
-    <div th:text=" 'ok' }">Hi, User</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

@@ -102,6 +102,7 @@ public class Empleado {
         this.correo = correo;
         this.rolEmpleado = rolEmpleado;
         this.contrasena = contrasena;
+
         if (this.rolEmpleado.getNombreRol().equals("Administrador")) {
             this.rol_empleado = "ROLE_ADMIN";
 
